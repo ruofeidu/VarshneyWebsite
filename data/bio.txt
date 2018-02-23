@@ -1,0 +1,31 @@
+Amitabh Varshney is Dean of the [College of Computer, Mathematical and Natural Sciences](https://cmns.umd.edu),
+and Professor of [Computer Science](https://cs.umd.edu) at the [University of Maryland at College Park](https://www.umd.edu).
+He received a B. Tech. in Computer Science from the [Indian Institute of Technology, Delhi](http://www.iitd.ac.in) in 1989,
+and a M.S. and Ph.D. in Computer Science from the [University of North Carolina at Chapel Hill](https://www.unc.edu) in 1991 and 1994.
+From 1994 to 2000, he was Assistant Professor of Computer Science at the [State University of New York at Stony Brook](http://www.stonybrook.edu/).
+
+Varshney's research focus is on exploring the applications of
+high-performance computing and visualization in engineering, science, and medicine.
+He has worked on a number of research areas including visual saliency,
+summarization of large visual datasets, and visual computing for big data.
+He is currently exploring applications of virtual and augmented reality in several applications,
+including healthcare and telemedicine.
+He has previously worked on the design and implementation of virtual walkthroughs of proposed structures,
+such as buildings, automobiles, and submarines.
+In the process he has developed new algorithms for automatically generating multiresolution object hierarchies,
+image-based rendering, parallel computation and simplification of radiosity meshes,
+and fine gesture recognition for virtual environments.
+His work on efficient and robust computation of smooth molecular surfaces is useful in the rational drug design process
+through the protein folding and docking problems.
+He is currently exploring applications in general-purpose high-performance parallel computing using clusters of CPUs
+and Graphics Processing Units (GPUs).
+He has also consulted and collaborated with the industry including
+[NVIDIA](http://www.nvidia.com),
+[Honda](https://www.honda.com),
+[IBM](https://www.ibm.com),
+[Daimler Chrysler](https://www.daimler.com),
+[General Dynamics](https://www.gd.com), and
+[Reuters](https://www.reuters.com).
+Varshney received a NSF CAREER Award in 1995 and a Honda Research Initiation Award in 1997.
+He received the IEEE Visualization Technical Achievement Award in 2004.
+He is a Fellow of IEEE.

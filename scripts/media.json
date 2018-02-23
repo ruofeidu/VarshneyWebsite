@@ -1,0 +1,227 @@
+[
+    {
+        "publisher": "CNN Money",
+        "title": "How Facebook's AI could change your life (or at least help you eat better),",
+        "month": "August",
+        "day": "25",
+        "year": "2016",
+        "video": false,
+        "url": "http://money.cnn.com/2016/08/25/technology/facebook-ai-augmented-reality/"
+    },
+    {
+        "publisher": "University of Maryland Communications",
+        "title": "An Augmented View,",
+        "month": "October",
+        "day": "12",
+        "year": "2016",
+        "video": true,
+        "url": "https://youtu.be/yDTjCYtr_4Y"
+    },
+    {
+        "publisher": "Communications of the ACM",
+        "title": "VR Trauma Surgery 101: Going for the Grisly,",
+        "month": "January",
+        "day": "10",
+        "year": "2017",
+        "video": false,
+        "url": "https://cacm.acm.org/news/212008-vr-trauma-surgery-101-going-for-the-grisly/fulltext"
+    },
+    {
+        "publisher": "NewseumVR Meets",
+        "title": "Health and Medicine Panel Discussion,",
+        "month": "March",
+        "day": "27",
+        "year": "2017",
+        "video": true,
+        "url": "https://obj.umiacs.umd.edu/content/3-27%20VR%20PGM.m4v"
+    },
+    {
+        "publisher": "Medpage Today",
+        "title": "Could Virtual, Augmented Reality Augment Medicine?",
+        "month": "March",
+        "day": "29",
+        "year": "2017",
+        "video": false,
+        "url": "https://www.medpagetoday.com/practicemanagement/informationtechnology/64201"
+    },
+    {
+        "publisher": "Haptic.al",
+        "title": "How an ultrasound examination looks with the addition of augmented reality,",
+        "month": "April",
+        "day": "4",
+        "year": "2017",
+        "video": false,
+        "url": "https://haptic.al/university-maryland-baltimore-augmented-reality-bf2c57830ebe"
+    },
+    {
+        "publisher": "Augmented Reality News",
+        "title": "University of Maryland Demonstrates the Future of Medical Procedures with Augmented Reality,",
+        "month": "April",
+        "day": "6",
+        "year": "2017",
+        "video": false,
+        "url": "https://augmented.reality.news/news/university-maryland-demonstrates-future-medical-procedures-with-augmented-reality-0176975/"
+    },
+    {
+        "publisher": "Diamondback",
+        "title": "UMD researchers\u2019 augmented reality technology could help doctors in the operating room,",
+        "month": "April",
+        "day": "6",
+        "year": "2017",
+        "video": false,
+        "url": "http://www.dbknews.com/2017/04/06/umd-augmented-reality-surgery/"
+    },
+    {
+        "publisher": "UMB News",
+        "title": "Augmenting Reality in the Operating Room,",
+        "month": "March",
+        "day": "30",
+        "year": "2017",
+        "video": false,
+        "url": "http://www.umaryland.edu/news/archived-news/march-2017/newspressreleaseshottopics/augmenting-reality-in-the-operating-room.php"
+    },
+    {
+        "publisher": "Baltimore Business Journal",
+        "title": "5 Minutes with Amitabh Varshney,",
+        "month": "April",
+        "day": "10",
+        "year": "2017",
+        "video": false,
+        "url": "http://www.bizjournals.com/baltimore/news/2017/04/10/5-minutes-with-amitabh-varshney-director-of-the.html"
+    },
+    {
+        "publisher": "Smithsonian Online",
+        "title": "Augmented Reality Could Change Health Care\u2014Or Be a Faddish Dud,",
+        "month": "April",
+        "day": "20",
+        "year": "2017",
+        "video": false,
+        "url": "http://www.smithsonianmag.com/innovation/augmented-reality-could-change-health-care-or-be-faddish-dud-180962945/"
+    },
+    {
+        "publisher": "Baltimore Sun",
+        "title": "Virtual reality in medicine,",
+        "month": "May",
+        "day": "8",
+        "year": "2017",
+        "video": false,
+        "url": "http://www.baltimoresun.com/health/maryland-health/bal-virtual-reality-in-medicine-20170508-photogallery.html"
+    },
+    {
+        "publisher": "Baltimore Sun",
+        "title": "Bringing virtual reality to medical treatment,",
+        "month": "May",
+        "day": "15",
+        "year": "2017",
+        "video": false,
+        "url": "http://www.baltimoresun.com/health/maryland-health/bs-hs-virtual-reality-medicine-20170508-story.html"
+    },
+    {
+        "publisher": "Terp Magazine",
+        "title": "From VR to V-Art,",
+        "month": "May",
+        "day": "23",
+        "year": "2017",
+        "video": false,
+        "url": "http://terp.umd.edu/from-vr-to-v-art/#.WoRr9q6nHDC"
+    },
+    {
+        "publisher": "Signal Magazine",
+        "title": "Go to Moscow to Learn Russian (Sort of),",
+        "month": "June",
+        "day": "1",
+        "year": "2017",
+        "video": false,
+        "url": "https://www.afcea.org/content/?q=Article-go-moscow-learn-russian-sort"
+    },
+    {
+        "publisher": "Channel News Asia",
+        "title": "Augmented reality for operating room doctors,",
+        "month": "June",
+        "day": "11",
+        "year": "2017",
+        "video": true,
+        "url": "https://www.channelnewsasia.com/news/videos/augmented-reality-for-operating-room-doctors-8935986"
+    },
+    {
+        "publisher": "Future of Information Alliance",
+        "title": "The Future of Virtual and Augmented Reality and Immersive Storytelling,",
+        "month": "June",
+        "day": "13",
+        "year": "2017",
+        "video": true,
+        "url": "https://www.youtube.com/watch?v=yyWTVpY4dn8&feature=youtu.be"
+    },
+    {
+        "publisher": "BTN LiveB1G",
+        "title": "Maryland partners with Newseum to give patrons a virtual trip back in time,",
+        "month": "August",
+        "day": "30",
+        "year": "2017",
+        "video": true,
+        "url": "https://youtu.be/dSz18BJInOo"
+    },
+    {
+        "publisher": "Diamondback",
+        "title": "Newseum guests can walk through streets of Berlin during Cold War with UMD team\u2019s help,",
+        "month": "September",
+        "day": "27",
+        "year": "2017",
+        "video": false,
+        "url": "http://www.dbknews.com/2017/09/28/virtual-reality-berlin-wall-newseum/ "
+    },
+    {
+        "publisher": "Terp Magazine",
+        "title": "Against the Wall,",
+        "month": "October",
+        "day": "17",
+        "year": "2017",
+        "video": false,
+        "url": "http://terp.umd.edu/against-the-wall/#.WoRmUq6nHDC"
+    },
+    {
+        "publisher": "Big Ten Network",
+        "title": "How Maryland computer scientists are bringing the past to life,",
+        "month": "November",
+        "day": "11",
+        "year": "2017",
+        "video": false,
+        "url": "http://btn.com/2017/11/11/how-maryland-computer-scientists-are-bringing-the-past-to-life-btn-livebig/amp/"
+    },
+    {
+        "publisher": "NBC News Mach",
+        "title": "4 surprising ways augmented reality will revolutionize your life,",
+        "month": "December",
+        "day": "19",
+        "year": "2017",
+        "video": false,
+        "url": "https://www.nbcnews.com/mach/science/4-surprising-ways-augmented-reality-will-revolutionize-your-life-ncna830911"
+    },
+    {
+        "publisher": "CNN Money",
+        "title": "Why is everyone so excited about Nvidia?",
+        "month": "January",
+        "day": "9",
+        "year": "2018",
+        "video": false,
+        "url": "http://money.cnn.com/2018/01/08/technology/nvidia-ces-2018/index.html"
+    },
+    {
+        "publisher": "Capital News Service",
+        "title": "Police and universities collaborate on reforms,",
+        "month": "January",
+        "day": "17",
+        "year": "2018",
+        "video": false,
+        "url": "http://cnsmaryland.org/baltimore-university/"
+    },
+    {
+        "publisher": "NBC News Mach",
+        "title": "Augmented reality lets doctors peer inside the body like never before,",
+        "month": "February",
+        "day": "14",
+        "year": "2018",
+        "video": false,
+        "url": "https://www.nbcnews.com/mach/science/augmented-reality-lets-doctors-peer-inside-body-never-ncna847691"
+    }
+]
