@@ -1,0 +1,14 @@
+<header>
+<h2>Selected Professional Activities</h2>
+</header>
+* Board of Directors, IEEE Visualization and Graphics Technical Committee, 2012 – present.
+* Steering Committee, IEEE Visualization Conference, 2006 – present.
+* Chair, IEEE Visualization and Graphics Technical Committee, 2008 – 2012.
+* Papers Co-Chair, ACM Symposium on Interactive 3D Graphics and Games, 2011.
+* General Co-Chair, ACM Symposium on Interactive 3D Graphics and Games, 2010.
+* Keynote Speaker, Symposia on Point-based Graphics & Volume Graphics, Prague, CZ, 2007.
+* Best Papers Award Committee, IEEE Visualization 2015, 2009, 2007, 2002.
+* Conference Chair, IEEE Visualization 2006 and 2007.
+* Editorial Board, IEEE Transactions on Visualization and Computer Graphics, 1999 – 2003.
+* Papers Chair, IEEE Visualization 2000 and 2001.
+* Technical Program Committees for several conferences including Shape Modeling Intl, Computer Graphics Intl, Eurographics, Symposium on Geometry Processing.

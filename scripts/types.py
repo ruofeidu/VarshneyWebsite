@@ -17,13 +17,31 @@ class Media(object):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
 
+def smart_title(s):
+    return ' '.join(w if w.isupper() else w.capitalize() for w in s.split())
+
+
 def build_media(g):
     return {
         'publisher': g[0],
-        'title': g[1],
+        'title': smart_title(g[1]),
         'month': g[2],
         'day': g[3],
         'year': g[4],
         'video': True if g[5].find('video') >= 0 else False,
         'url': g[6],
+    }
+
+
+def build_student(g):
+    return {
+        'url': g[0],
+        'photo': g[1],
+        'name': g[2],
+        'title': 'Ph.D. Student',
+        'category': 'Graduate Student',
+        'time': '',
+        'department': 'Computer Science',
+        'current': 'University of Maryland',
+        'year': 2013,
     }

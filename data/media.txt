@@ -1,0 +1,26 @@
+[comment]: <> (This markdown file is generated from media.json by build.py)
+* NBC News Mach, [Augmented Reality Lets Doctors Peer Inside The Body Like Never Before](https://www.nbcnews.com/mach/science/augmented-reality-lets-doctors-peer-inside-body-never-ncna847691), February 14, 2018.
+* Capital News Service, [Police And Universities Collaborate On Reforms](http://cnsmaryland.org/baltimore-university/), January 17, 2018.
+* CNN Money, [Why Is Everyone So Excited About Nvidia?](http://money.cnn.com/2018/01/08/technology/nvidia-ces-2018/index.html), January 9, 2018.
+* NBC News Mach, [4 Surprising Ways Augmented Reality Will Revolutionize Your Life](https://www.nbcnews.com/mach/science/4-surprising-ways-augmented-reality-will-revolutionize-your-life-ncna830911), December 19, 2017.
+* Big Ten Network, [How Maryland Computer Scientists Are Bringing The Past To Life](http://btn.com/2017/11/11/how-maryland-computer-scientists-are-bringing-the-past-to-life-btn-livebig/amp/), November 11, 2017.
+* Terp Magazine, [Against The Wall](http://terp.umd.edu/against-the-wall/#.WoRmUq6nHDC), October 17, 2017.
+* Diamondback, [Newseum Guests Can Walk Through Streets Of Berlin During Cold War With UMD Team’s Help](http://www.dbknews.com/2017/09/28/virtual-reality-berlin-wall-newseum/ ), September 27, 2017.
+* BTN LiveB1G, [Maryland Partners With Newseum To Give Patrons A Virtual Trip Back In Time](https://youtu.be/dSz18BJInOo), (Video) August 30, 2017.
+* Future of Information Alliance, [The Future Of Virtual And Augmented Reality And Immersive Storytelling](https://www.youtube.com/watch?v=yyWTVpY4dn8&feature=youtu.be), (Video) June 13, 2017.
+* Channel News Asia, [Augmented Reality For Operating Room Doctors](https://www.channelnewsasia.com/news/videos/augmented-reality-for-operating-room-doctors-8935986), (Video) June 11, 2017.
+* Signal Magazine, [Go To Moscow To Learn Russian (sort Of)](https://www.afcea.org/content/?q=Article-go-moscow-learn-russian-sort), June 1, 2017.
+* Terp Magazine, [From VR To V-art](http://terp.umd.edu/from-vr-to-v-art/#.WoRr9q6nHDC), May 23, 2017.
+* Baltimore Sun, [Bringing Virtual Reality To Medical Treatment](http://www.baltimoresun.com/health/maryland-health/bs-hs-virtual-reality-medicine-20170508-story.html), May 15, 2017.
+* Baltimore Sun, [Virtual Reality In Medicine](http://www.baltimoresun.com/health/maryland-health/bal-virtual-reality-in-medicine-20170508-photogallery.html), May 8, 2017.
+* Smithsonian Online, [Augmented Reality Could Change Health Care—or Be A Faddish Dud](http://www.smithsonianmag.com/innovation/augmented-reality-could-change-health-care-or-be-faddish-dud-180962945/), April 20, 2017.
+* Baltimore Business Journal, [5 Minutes With Amitabh Varshney](http://www.bizjournals.com/baltimore/news/2017/04/10/5-minutes-with-amitabh-varshney-director-of-the.html), April 10, 2017.
+* UMB News, [Augmenting Reality In The Operating Room](http://www.umaryland.edu/news/archived-news/march-2017/newspressreleaseshottopics/augmenting-reality-in-the-operating-room.php), March 30, 2017.
+* Diamondback, [UMD Researchers’ Augmented Reality Technology Could Help Doctors In The Operating Room](http://www.dbknews.com/2017/04/06/umd-augmented-reality-surgery/), April 6, 2017.
+* Augmented Reality News, [University Of Maryland Demonstrates The Future Of Medical Procedures With Augmented Reality](https://augmented.reality.news/news/university-maryland-demonstrates-future-medical-procedures-with-augmented-reality-0176975/), April 6, 2017.
+* Haptic.al, [How An Ultrasound Examination Looks With The Addition Of Augmented Reality](https://haptic.al/university-maryland-baltimore-augmented-reality-bf2c57830ebe), April 4, 2017.
+* Medpage Today, [Could Virtual, Augmented Reality Augment Medicine?](https://www.medpagetoday.com/practicemanagement/informationtechnology/64201), March 29, 2017.
+* NewseumVR Meets, [Health And Medicine Panel Discussion](https://obj.umiacs.umd.edu/content/3-27%20VR%20PGM.m4v), (Video) March 27, 2017.
+* Communications of the ACM, [VR Trauma Surgery 101: Going For The Grisly](https://cacm.acm.org/news/212008-vr-trauma-surgery-101-going-for-the-grisly/fulltext), January 10, 2017.
+* University of Maryland Communications, [An Augmented View](https://youtu.be/yDTjCYtr_4Y), (Video) October 12, 2016.
+* CNN Money, [How Facebook's AI Could Change Your Life (or At Least Help You Eat Better)](http://money.cnn.com/2016/08/25/technology/facebook-ai-augmented-reality/), August 25, 2016.

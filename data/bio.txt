@@ -1,8 +1,12 @@
-Amitabh Varshney is Dean of the [College of Computer, Mathematical and Natural Sciences](https://cmns.umd.edu),
-and Professor of [Computer Science](https://cs.umd.edu) at the [University of Maryland at College Park](https://www.umd.edu).
+Amitabh Varshney is
+Dean of the [College of Computer, Mathematical and Natural Sciences](https://cmns.umd.edu),
+and
+Professor of [Computer Science](https://cs.umd.edu) at the [University of Maryland at College Park](https://www.umd.edu).
 He received a B. Tech. in Computer Science from the [Indian Institute of Technology, Delhi](http://www.iitd.ac.in) in 1989,
-and a M.S. and Ph.D. in Computer Science from the [University of North Carolina at Chapel Hill](https://www.unc.edu) in 1991 and 1994.
-From 1994 to 2000, he was Assistant Professor of Computer Science at the [State University of New York at Stony Brook](http://www.stonybrook.edu/).
+and a M.S. and Ph.D. in Computer Science from the
+[University of North Carolina at Chapel Hill](https://www.unc.edu) in 1991 and 1994.
+From 1994 to 2000, he was Assistant Professor of Computer Science at the
+[State University of New York at Stony Brook](http://www.stonybrook.edu/).
 
 Varshney's research focus is on exploring the applications of
 high-performance computing and visualization in engineering, science, and medicine.
@@ -20,12 +24,8 @@ through the protein folding and docking problems.
 He is currently exploring applications in general-purpose high-performance parallel computing using clusters of CPUs
 and Graphics Processing Units (GPUs).
 He has also consulted and collaborated with the industry including
-[NVIDIA](http://www.nvidia.com),
-[Honda](https://www.honda.com),
-[IBM](https://www.ibm.com),
-[Daimler Chrysler](https://www.daimler.com),
-[General Dynamics](https://www.gd.com), and
-[Reuters](https://www.reuters.com).
+NVIDIA, Honda, IBM, Daimler Chrysler, General Dynamics, and Reuters.
 Varshney received a NSF CAREER Award in 1995 and a Honda Research Initiation Award in 1997.
-He received the IEEE Visualization Technical Achievement Award in 2004.
+He received the
+[IEEE Visualization Technical Achievement Award](http://tab.computer.org/vgtc/awards/amitabhVis2004.pdf) in 2004.
 He is a Fellow of IEEE.
