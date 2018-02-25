@@ -27,3 +27,42 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.header-pic {
+    position: absolute;
+    bottom: 0;
+}
+
+.header-span {
+    background-image: url("../images/AmitabhVarshney.jpg");
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: top;
+    background-position: center top;
+
+    /* scale bg image proportionately */
+    background-size: cover;
+
+    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+    -ms-behavior: url(https://cdn.css-tricks.com/backgroundsize.min.htc);
+    /* prevent scaling past src width (or not) */
+    /* max-width: 1200px; */
+}
+
+/* apply to both img.scale and div.crop-height */
+.flip {
+  -webkit-transform: rotate(180deg);
+  -moz-transform:    rotate(180deg);
+  -ms-transform:     rotate(180deg);
+  -o-transform:      rotate(180deg);
+  transform:         rotate(180deg);
+  /* needed? not sure */
+  zoom: 1;
+}
+
+img.flip {
+  /* if native or declared width of img.scale
+     is less than div.crop-height, this will
+     flipped img left */
+  float: right;
+  /* add clearfix if needed */
+}
