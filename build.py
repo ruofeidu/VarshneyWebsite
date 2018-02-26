@@ -84,7 +84,8 @@ def write_bib(b):
         f.write('&nbsp&nbspauthor = "%s",<br/>\n' % b['author'])
         f.write('&nbsp&nbsp%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
         f.write('&nbsp&nbspyear = "%s",<br/>\n' % b['year'])
-        f.write('&nbsp&nbspvolume = "%s",<br/>\n' % b['volume'])
+        if b['type'] == 'article':
+            f.write('&nbsp&nbspvolume = "%s",<br/>\n' % b['volume'])
         f.write('&nbsp&nbsppages = "%s"<br/>\n' % b['pages'])
         f.write('}<br/>\n')
 
@@ -104,8 +105,11 @@ def write_data_to_markdown(file_name):
     LINE_STUDENTS = '<div class="2u 12u$(medium) center"><span class="image fit">' \
                     '<a href="%s" target="_blank"><img src="photos/%s" alt="%s" class="face"/></a></span>' \
                     '<h4 class="center"><a href="%s" target="_blank" class="name">%s</a></h4></div>\n'
-    # (m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'], m['keywords'], m['url'], m['video'], m['code'], m['slides'], m['apa'], m['bib']  )
-    LINE_PAPERS = '<div class="3u 12u$(medium) pub-pic"><span class="image fit"><img src="teaser/%s" alt="%s" /></span></div>' \
+
+    # (m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'], m['keywords'], m['url'],
+    # m['video'], m['code'], m['slides'], m['apa'], m['bib']  )
+    LINE_PAPERS = '<div class="3u 12u$(medium)"><span class="image fit">' \
+                  '<a href="%s" target="_blank"><img src="teaser/%s" class="pub-pic" alt="%s" /></a></span></div>' \
                   '<div class="9u 12u$(medium) pub-info"><h4><a href="%s" target="_blank">%s</a></h4>' \
                   '<p class="authors">%s</p>' \
                   '<p class="booktitle">%s</p>' \
@@ -113,7 +117,8 @@ def write_data_to_markdown(file_name):
                   '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s | ' \
                   'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                   '</p></div>'
-    LINE_UNPUBLISHED = '<div class="3u 12u$(medium) pub-pic"><span class="image fit"><img src="teaser/%s" alt="%s" /></span></div>' \
+    LINE_UNPUBLISHED = '<div class="3u 12u$(medium)"><span class="image fit">' \
+                       '<img src="teaser/%s" class="pub-pic" alt="%s" /></span></div>' \
                        '<div class="9u 12u$(medium) pub-info"><h4>%s</h4>' \
                        '<p class="authors">%s</p>' \
                        '<p class="booktitle">%s</p>' \
@@ -191,7 +196,7 @@ def write_data_to_markdown(file_name):
                         f.write(NEW_PUB)
                         if m['published']:
                             f.write(LINE_PAPERS % (
-                                m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
+                                m['url'], m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
                                 m['keywords'],
                                 m['url'], m['doi'], m['video'], m['code'], m['slides'], m['web'], m['apa'], m['bib']))
                         else:

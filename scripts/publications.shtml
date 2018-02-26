@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GVIL Publications</title>
+	<link rel="stylesheet" href="styles/gvil.css" type="text/css">
+	<link rel="shortcut icon" href="favicon.png" />
+	<script type="text/javascript">
+	<!--
+	function popup(mylink, windowname)
+	{
+	if (! window.focus)return true;
+	var href;
+	if (typeof(mylink) == 'string')
+		href=mylink;
+	else
+		href=mylink.href;
+	window.open(href, windowname, 'width=800,height=400,scrollbars=yes');
+	return false;
+	}
+	//-->
+	</script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>
+	$(function(){
+	$("#topContent").load("templates/top.html");
+	$("#bottomContent").load("templates/bottom.html");
+	});
+	</script>
+</head>
+<body>
+    <!--#include file = "templates/top.html" -->
+
+    <p><div class="head1">Publications</div></p>
+    <br style="clear:left" />
+	
+	<br style="clear:left"><div class="head2">2018</div><br>
+    <div>
+        <blockquote>
+            <ul>
+		<li>
+			<b>
+				Kernel Foveated Rendering
+			</b>
+			<br />
+			Xiaoxu Meng, Ruofei Du, and Amitabh Varshney <br />
+			<i>To appear in the Proceedings of the ACM on Computer Graphics and Interactive Techniques 2018 (PACM on CGIT 2018)</i><br />
+			<i>To be presented on 2018 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2018)</i><br />
+			<br />
+		</li>
+		  
+		<li>
+			<b>
+				Montage4D: Interactive Seamless Fusion of Multiview Video Textures
+			</b>
+			<br />
+			Ruofei Du, Ming Chuang, Wayne Chang, Hugues Hoppe, and Amitabh Varshney <br />
+			<i>To appear in the Proceedings of the 2018 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2018)</i><br />
+			<br />
+		</li>
+		
+		<li>
+			<b>Spatial Mnemonics Using Virtual Reality</b>
+			<br />
+			Eric Krokos, Catherine Plaisant, and Amitabh Varshney <br />
+			<i>To appear in 2018 the 2nd International Conference on Virtual and Augmented Reality Simulations (ICVARS 2018)</i><br />
+			<br />
+		</li>
+        </ul>
+        </blockquote>
+    </div>
+
+    <br style="clear:left"><div class="head2">2016-2017</div><br>
+    <div>
+        <blockquote>
+            <ul>
+			
+			<li>
+				<b>
+					<a href="https://dl.acm.org/citation.cfm?id=3107449">
+						Winnow: Interactive Visualization of Temporal Changes in Multidimensional Clinical Data.
+					</a>
+				</b>
+				<br />
+				Hsueh-Chien Cheng, Rainer von Coelln, Ann L Gruber-Baldini, Lisa M Shulman, and Amitabh Varshney <br />
+				<i>Proceedings of the 8th ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics.</i><br />
+				<br />
+			</li>
+			
+			<li>
+				<b>
+					<a href="">
+						Interactive Exploration of Microstructural Features in Gigapixel Microscopy Images.
+					</a>
+				</b>
+				<br />
+				Hsueh-Chien Cheng, Antonio Cardone, and Amitabh Varshney <br />
+				<i>Proceedings of IEEE International Conference on Image Processing, 2017</i><br />
+				<br />
+			</li>
+
+			<li>
+				<b>
+					<a href="">
+						Deep-learning-assisted Visualization for Live-Cell Images.
+					</a>
+				</b>
+				<br />
+				Hsueh-Chien Cheng, Antonio Cardone, Eric Krokos, Bogdan Stoica, Alan Faden, and Amitabh Varshney <br />
+				<i>Proceedings of IEEE International Conference on Image Processing, 2017</i><br />
+				<br />
+			</li>
+
+			<li>
+				<b>
+					<a href="">
+						Volume Segmentation Using Convolutional Neural Networks With Limited Training Data.
+					</a>
+				</b>
+				<br />
+				Hsueh-Chien Cheng and Amitabh Varshney <br />
+				<i>Proceedings of IEEE International Conference on Image Processing, 2017.</i><br />
+				<br />
+			</li>
+
+
+			<li>
+				<b>
+					<a href="https://academic.oup.com/nar/article/3038234/Tracking-fluctuation-hotspots-on-the-yeast">
+						Tracking Fluctuation Hotspots on the Yeast Ribosome Through the Elongation Cycle.
+					</a>
+				</b>
+				&nbsp;<a href="https://www.cs.umd.edu/gvil/papers/TrackingFluctuation.pdf" target="_blank">preprint</a>
+				<br />
+				Suna P. Gulay, Sujal Bista, Amitabh Varshney, Serdal Kirmizialtin, Karissa Y. Sanbonmatsu, and Jonathan D. Dinman <br />
+				<i>Nucleic Acids Research</i> <br />
+				Vol. 1, No. 1, Feb. 2017, pp 1-13.<br />
+				<br />
+			</li>
+				
+                <li>
+                    <b>
+                        <a href="http://link.springer.com/article/10.1007/s00371-016-1231-2">
+                            Kinetic Depth Images: Flexible Generation of Depth Perception. 
+						</a>
+                    </b>
+					&nbsp;<a href="https://www.youtube.com/watch?v=gq70rca1P1I&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s" target="_blank">video</a>
+					&nbsp;<a href="https://www.cs.umd.edu/gvil/papers/KDIPrePrint.pdf" target="_blank">preprint</a>
+                    <br />
+                    Sujal Bista, caro Lins Leitão da Cunha, and Amitabh Varshney <br />
+                    <i>The Visual Computer</i> <br />
+                    Vol. 1, No. 1, May. 2016, pp 1-13.<br />
+                    <br />
+                </li>
+
+
+                <li>
+                    <b>
+                        <a href="http://dl.acm.org/citation.cfm?id=2945294" target="_blank">
+                            Social Street View: Blending Immersive Street Views with Geo-Tagged Social Media.
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=VjgqgRThnC8&index=1&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s" target="_blank">video</a>
+                    &nbsp;<a href="http://socialstreetview.com/#three" target="_blank">slides</a>
+                    &nbsp;<a href="http://socialstreetview.com/#two" target="_blank">preprint</a>
+                    <br />
+                    Ruofei Du and Amitabh Varshney <br />
+                    <i>Proceedings of the 21st International Conference on Web3D Technology</i> <br />
+                    Aug. 2016, pp 77-85.<br />
+					<i>ACM Web3D 2016</i> <br />
+                    <b>Best Paper Award&nbsp;&nbsp;<a href="http://www.umiacs.umd.edu/about-us/news/varshney-and-graduate-student-du-win-best-paper-award-2016-web3d-conference" target="_blank">News</a></b> <br />
+
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="http://dl.acm.org/citation.cfm?id=2945299&CFID=674635692&CFTOKEN=43180850">
+                            Video Fields: Fusing Multiple Surveillance Videos into a Dynamic Virtual Environment.
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=5h9r2ksdJQc&index=4&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s" target="_blank">video</a>
+                    &nbsp;<a href="http://videofields.com/#three" target="_blank">slides</a>
+                    &nbsp;<a href="http://videofields.com/#two" target="_blank">preprint</a>
+                    <br />
+                    Ruofei Du, Sujal Bista, and Amitabh Varshney <br />
+                    <i>Proceedings of the 21st International Conference on Web3D Technology</i> <br />
+					Aug. 2016, pp 165-172.<br />
+					<i>ACM Web3D 2016</i> <br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+	
+    <a name="#pub2013"> </a>
+	
+    <br style="clear:left"><div class="head2">2013-2015</div><br>
+    <div>
+        <blockquote>
+            <ul>
+
+                <li>
+                    <b>
+                        <a href="http://www.umiacs.umd.edu/~sujal/files/SegmentationChapter.pdf">
+                            Visual Knowledge Discovery for Diffusion Kurtosis Datasets of the Human Brain.
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=FyDXPvXaXxE&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s&index=9">youtube</a>
+                    &nbsp;<a href="http://dkiviewer.codeplex.com">code</a>
+                    <br />
+                    Sujal Bista, Jiachen Zhuo, Rao P. Gullapalli, and Amitabh Varshney <br />
+                    <i>Visualization and Processing of Higher Order Descriptors for Multi-Valued Data</i> <br />
+                    Vol. 1, No. 1, July. 2015, pp 213-234.<br />
+                    <br />
+                </li>
+
+
+                <li>
+                    <b>
+                        <a href="http://www.umiacs.umd.edu/~sujal/files/DKIViewer.pdf">
+                            Visualization of Brain Microstructure through Spherical Harmonics Illumination of High Fidelity Spatio-Angular Fields.
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=FyDXPvXaXxE&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s&index=9">youtube</a>
+                    &nbsp;<a href="http://dkiviewer.codeplex.com">code</a>
+                    &nbsp;<a href="http://www.umiacs.umd.edu/~sujal/files/DKIViewer.mp4">mp4</a>
+                    <br />
+                    Sujal Bista, Jiachen Zhuo, Rao P. Gullapalli, and Amitabh Varshney <br />
+                    <i>IEEE Transactions on Visualization and Computer Graphics</i> <br />
+                    Vol. 20, No. 12, Dec. 2014, pp 2516-2525.<br />
+                    <i>IEEE SciVis </i> <br />
+                    <b>Best Paper Award</b> <br />
+
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="http://www.umiacs.umd.edu/~sujal/files/OpticalTweezersJCISE.pdf">
+                            Using GPUs for realtime prediction of optical forces on microsphere ensembles
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=lCUI6bUffp0&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s&index=10">youtube</a>
+                    &nbsp;<a href="http://www.umiacs.umd.edu/~sujal/files/comparisionI.mp4">video</a>
+                    <br />
+                    Sujal Bista, Sagar Chowdhury, Satyandra. K. Gupta, and Amitabh Varshney <br />
+                    <i>ASME Journal of Computing and Information Science in Engineering</i> <br />
+                    Vol. 13, No. 3, Apr 2013, pp 031002.<br />
+                    <br />
+                </li>
+
+
+                <li>
+                    <b>
+                        <a href="http://iopscience.iop.org/1749-4699/6/1/015007">
+                            Parallel Geometric Classification of Stem Cells by their 3D Morphology
+                        </a>
+                    </b><br />
+                    D. Juba, A. Cardone, C. Y. Ip, C. G. Simon Jr., C. K. Tison, G. Kumar, M. Brady, and A. Varshney <br />
+                    <i>Computational Science & Discovery</i> <br />
+                    Vol. 6, No. 1, 015007, 2013.<br />
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/ip_hpg13.pdf">
+                            PixelPie: Maximal Poisson-disk Sampling with Rasterization
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=G94y3YRqSHk&index=6&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s">video</a>
+                    &nbsp;<a href="http://sf.net/p/pixelpie/">code</a>
+                    <br />
+                    C.Y. Ip,  M.A. Yalcin, D. Luebke and A. Varshney <br />
+                    <i>High-Performance Graphics</i> <br />
+                    2013, pp 17 - 26.<br />
+                    <br />
+                </li>
+
+
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub2011"> </a>
+    <br style="clear:left"><div class="head2">2011-2012</div><br>
+    <div>
+        <blockquote>
+            <ul>
+                <li>
+                    <a href="./papers/ip_scivis12.pdf">
+                        <b>
+                            Hierarchical Exploration of Volumes Using Multilevel
+                            Segmentation of the Intensity-Gradient Histograms
+                        </b>
+                    </a>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=Lyb97Po2_1g&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s&index=7">video</a>
+                    &nbsp;<a href="http://www.cs.umd.edu/~ipcy/software/volsegtree">code</a>
+                    <br />
+                    C.Y. Ip,  A. Varshney, and J. JaJa <br />
+                    <i> IEEE Transactions on Visualization and Computer Graphics</i> <br />
+                    Vol. 18, No. 12, 2012, pp 2355 - 2363. <br />
+                    <i>IEEE SciVis </i> <br />
+                    <b>Best Paper Award</b> <br />
+                    <br />
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/ASMEOpticalTweezersGPU.pdf">
+                            Using GPUs for Realtime Prediction of Optical Forces on Microsphere Ensembles
+                        </a> <br />
+                    </b>
+                    S. Bista, S. Chowdhury, S.K. Gupta, and A. Varshney  <br />
+                    <i>ASME Computers and Information in Engineering Conference</i><br />
+                    August 2012.<br />
+                    <b>Best Paper Award</b> <br />
+                    <br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/gpu_tweezers.pdf">
+                            Speeding Up Particle Trajectory Simulations under Moving Force
+                            Fields using GPUs
+                        </a> <br />
+                    </b>
+                    R. Patro, J.P. Dickerson, S. Bista, S.K. Gupta, and A. Varshney <br />
+                    <i>ASME Journal of Computing and Information Science in Engineering </i> <br />
+                    Vol. 12, 021006, 2012.<br />
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/ip_vis11.pdf">
+                            Saliency-Assisted Navigation of Very Large Landscape Images
+                        </a>
+                    </b>
+                    &nbsp;<a href="http://www.youtube.com/watch?v=FwSMjYHTNX8">video</a>
+                    &nbsp;<a href="http://www.cs.umd.edu/~ipcy/software/gigapan-downloader">code</a>
+                    <br />
+                    C.Y. Ip, and A. Varshney <br />
+                    <i> IEEE Transactions on Visualization and Computer Graphics</i> <br />
+                    Vol. 17, No. 12, 2011, pp 1737 - 1746. <br />
+                    <i>IEEE Visualization </i><br />
+                    <b>Honorable Mention for the Best Paper Award</b><br />
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/patro_biovis11.pdf">
+                            MDMap : A System for Data-Driven Layout and Exploration of Molecular Dynamics Simulations
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=B5tBD2aDDhg&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s&index=8">video</a><br />
+                    R. Patro, C.Y. Ip, S. Bista, S.S. Cho, D. Thirumalai, and A. Varshney <br />
+                    <i> IEEE Symposium on Biological Data Visualization</i><br />
+                    October 2011.<br />
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/kim_dagstuhl11.pdf">Salient Frame Detection for Molecular Dynamics Simulations</a>
+                    </b> <br />
+                    Y. Kim, R. Patro, C.Y. Ip, D. P. O'Leary, A. Anishkin, S. Sukharev,
+                    and A. Varshney
+                    <br />
+                    <i>Scientific Visualization: Interactions, Features, Metaphors, Dagstuhl Follow-Ups</i><br />
+                    Vol. 2, 2011,  pp 160 - 175
+                    <br />
+                    <br />
+                </li>
+                <li>
+                    <b>
+                        <a href="http://www.sciencedirect.com/science/article/pii/S1524070311000166">
+                            A Robust and Rotationally Invariant Local Surface Descriptor with
+                            Applications to Non-local Mesh Processing
+                        </a>
+                    </b><br />
+                    A. Maximo, R. Patro, A. Varshney, and R. Farias <br />
+                    <i> Graphical Models </i> <br />
+                    Vol. 73, No. 5,  2011, pp 231 - 242. <br />
+                    <br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/soc-snap.pdf">
+                            Social Snapshot: A system for temporally coupled social photography
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=dUjc6HYWHmg&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s&index=6">video</a><br />
+                    R. Patro, C.Y. Ip, S. Bista, and A. Varshney <br />
+                    <i> IEEE Computer Graphics and Applications </i> <br />
+                    Vol. 31, No. 1, 2011, pp 74 - 84.<br />
+                    <br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+    <!-------------------------------------------------------------------->
+    <a name="#pub2009"> </a>
+    <br style="clear:left"><div class="head2">2009-2010</div><br>
+    <div>
+        <blockquote>
+            <ul>
+
+                <li>
+                    <b>
+                        <a href="./papers/patro_sv10.pdf">
+                            Saliency Guided Summarization of Molecular Dynamics Simulations
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Patro.2010.SV.bib.txt">(BibTex)</a><br>
+                    R. Patro, C.Y. Ip, and A. Varshney <br>
+                    <i>
+                        Scientific Visualization: Advanced Concepts, Dagstuhl
+                        Follow-Ups
+                    </i> <br />
+                    Vol. 1, 2010, pp 321 - 335. <br />
+                    <br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/kim_TAP10.pdf">
+                            Mesh Saliency and Human Eye Fixations
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kim.2010.TAP.bib.txt">(BibTex)</a><br>
+                    Y. Kim, A. Varshney, D. Jacobs, and F.Guimbretiere <br>
+                    <i> ACM Transactions on Applied Perception </i> <br>
+                    Vol. 7, No. 2, 2010, pp 1 - 13.
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        Salient Clustering for View-dependent Multiresolution Rendering
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Barni.2009.SIBGRAPI.bib.txt">(BibTex)</a><br>
+                    R. Barni, J.L.D. Comba, and A. Varshney<br />
+                    <i> SIBGRAPI</i> <br>
+                    2009.
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/sankaranarayanan_EUROSIP09.pdf">
+                            Modeling and Visualization of Human Activities for Multicamera Networks
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Sankaranarayanan.2009.EUROSIP.bib.txt">(BibTex)</a><br>
+                    A. Sankaranarayanan, R. Patro, P. Turaga, A. Varshney, and R. Chellappa  <br>
+                    <i> EURASIP Journal on Image and Video Processing</i> <br>
+                    Vol. 2009, 2009.
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/lee_IEICE09.pdf">
+                            Saliency-Guided Lighting
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Lee.2009.SGL.bib.txt">(BibTex)</a><br>
+                    C. H. Lee., Y. Kim, and A. Varshney <br>
+                    <i> IEICE Transactions on Information and Systems </i> <br>
+                    Vol. E92-D, No. 2, 2009, pp 369 - 373. <br>
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/stantchev_CSE09.pdf">
+                            Using Graphics Processors for High-Performance Computation and Visualization of Plasma Turbulence
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Stantchev.2009.HPCV.bib.txt">(BibTex)</a><br>
+                    G. Stantchev, D. Juba, W. Dorland, and A. Varshney <br>
+                    <i> IEEE Computing in Science and Engineering </i><br>
+                    Vol. 11, No. 2, 2009, pp 52 - 59.
+                    <br /><br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub2007"> </a>
+    <br style="clear:left"><div class="head2">2007 - 2008</div><br>
+    <div>
+        <blockquote>
+            <ul>
+                <li>
+                    <b>
+                        <a href="./papers/juba_JMGM08.pdf">
+                            Parallel Stochastic Measurement of Molecular Surface Area
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Juba.2008.PSMM.bib.txt">(BibTex)</a>
+                    &nbsp;<a href="http://sourceforge.net/projects/molecular-measurer/">code</a><br />
+                    D. Juba and A. Varshney <br>
+                    <i> Journal of Molecular Graphics and Modelling </i><br>
+                    Vol. 27, No. 1, August 2008, pp 82 - 87.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/stantchev_TPS08.pdf">
+                            Confluent Volumetric Visualization of Gyrokinetic Turbulence
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Stantchev.2008.CVVGT.bib.txt">(BibTex)</a><br>
+                    G. Stantchev, D. Juba, W. Dorland, and A. Varshney <br>
+                    <i> IEEE Transactions on Plasma Science </i><br>
+                    Vol. 36, No. 4, August 2008, pp 1112 - 1113.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/kim_TVCG08.pdf">
+                            Persuading Visual Attention through Geometry
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kim.2008.PVAG.bib.txt">(BibTex)</a><br>
+                    Y. Kim and A. Varshney <br>
+                    <i> IEEE Transactions on Visualization and Computer Graphics </i><br>
+                    Vol. 14, No. 4, July 2008, pp 772 - 782.
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/juba_UMDTR07.pdf">
+                            Modelling and Rendering Large Volume Data with Gaussian Radial Basis Functions
+                        </a>
+                    </b>
+                    &nbsp;<br>
+                    Derek Juba and Amitabh Varshney  <br />
+                    <i>Tech. Rep. UMIACS-TR-2007-22, University of Maryland, College Park</i><br>
+                    2007.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="http://www.biomedcentral.com/content/pdf/1471-2105-8-474.pdf">
+                            High-throughput sequence alignment using Graphics Processing Units
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Schatz.2007.HSAGPU.bib.txt">(BibTex)</a><br>
+                    M. C. Schatz, C. Trapnell, A. L. Delcher, and A. Varshney <br>
+                    <i> BMC Bioinformatics </i> <br>
+                    Vol. 8: 474, December 2007.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/hussein_GPGPU07.pdf">
+                            On Implementing Graph Cuts on CUDA
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Hussein.2010.GPGPU.bib.txt">(BibTex)</a><br>
+                    Mohamed Hussein, Amitabh Varshney, and Larry Davis <br />
+                    <i>First Workshop on General Purpose Processing on Graphics Processing Units</i><br>
+                    October 2007.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/wang_JPDC07.pdf">
+                            An Efficient and Scalable Parallel Algorithm for
+                            Out-of-core Isosurface Extraction and Rendering
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Wang.2007.ESPA.bib.txt">(BibTex)</a><br>
+                    Q. Wang, J. JaJa, and A. Varshney <br>
+                    <i> Journal of Parallel and Distributed Computing </i> <br>
+                    Vol. 67, No. 5, May 2007, pp 592 - 603.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/jagan_CG07.pdf">
+                            A Fast All-Nearest-Neighbor Algorithm for Applications
+                            Involving Large Point-Clouds
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Jagan.2007.FANN.bib.txt">(BibTex)</a><br>
+                    J. Sankaranarayanan, H. Samet, and
+                    A. Varshney <br>
+                    <i>Computers and Graphics </i><br>
+                    Vol. 31, No. 2, April 2007, pp 157 - 174.<br>
+                    <b>Best Paper of the Year Award, Computers and Graphics Journal, 2007 </b>
+                    <br /><br />
+                </li>
+
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub2005"> </a>
+    <br style="clear:left"><div class="head2">2005 - 2006</div><br>
+    <div>
+        <blockquote>
+            <ul>
+
+                <li>
+                    <b>
+                        <a href="./papers/hao_CAGD06.pdf">
+                            Geometry-guided Computation of 3D Electrostatics for Large Biomolecules
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Hao.2006.GGC3D.bib.txt">(BibTex)</a><br>
+                    X. Hao and A. Varshney <br>
+                    <i>Journal of Computer-aided Geometric Design</i><br>
+                    Vol. 23, No. 6, August 2006, pp 545 - 557.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/sevv06.pdf">
+                            Saliency-guided Enhancement for Volume Visualization
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kim.2006.SEVV.bib.txt">(BibTex)</a><br>
+                    Y. Kim and A. Varshney <br>
+                    <i>IEEE Transactions on Visualization and Computer Graphics (IEEE Visualization)</i><br>
+                    Vol. 12, No. 5, September 2006, pp 925 - 932.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/vts06.pdf">
+                            Vertex-Transformation Streams
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kim.2006.VTS.bib.txt">(BibTex)</a><br>
+                    Y. Kim, C. H. Lee, and A. Varshney <br>
+                    <i>Graphical Models</i><br>
+                    Vol 68, No. 4, July 2006, pp 371 - 383.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/jaganPBG06.pdf">
+                            A Fast k-Neighborhood Algorithm for Large Point Clouds
+                        </a>
+                    </b> <br>
+                    J. Sankaranarayanan, H. Samet, and A. Varshney <br>
+                    <i>Proceedings of the Symposium on Point-Based Graphics</i><br>
+                    July 29 - 30, 2006, Boston, MA
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/IPDPS06.pdf">
+                            An Efficient and Scalable Parallel Algorithm for Out-of-Core Isosurface Extraction and Rendering
+                        </a>
+                    </b> <br>
+                    Q. Wang, J. JaJa, and A. Varshney <br>
+                    <i>Proceedings of the 20th IEEE International Parallel and Distributed Processing Symposium (IPDPS'06)</i><br>
+                    April 25 - 29, 2006, Rhodes Island, Greece
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/gdltvcg.pdf">
+                            Geometry-dependent Lighting
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Lee.2005.GDL.bib.txt">(BibTex)</a><br>
+                    C. H. Lee, X. Hao and A. Varshney <br>
+                    <i>IEEE Transactions on Visualization and Computer Graphics</i><br>
+                    Vol 12, No. 2, March 2006, pp 197 - 207.
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/mesh_saliency_sig05.pdf">
+                            Mesh Saliency
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Lee.2005.MS.bib.txt">(BibTex)</a><br>
+                    C. H. Lee, A. Varshney, and D. Jacobs <br>
+                    <i>ACM Transactions on Graphics (Proceedings of SIGGRAPH 2005)</i><br>
+                    Vol 24, No 3, August 2005, pp 659 - 666.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/kalaiahTOG05.pdf">
+                            Statistical Geometry Representation for Efficient Transmission and Rendering
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kalaiah.2005.SGRETR.bib.txt">(BibTex)</a><br>
+                    A. Kalaiah and A. Varshney <br>
+                    <i>ACM Transactions on Graphics </i><br>
+                    Vol 24, No 2, April 2005, pp 348 - 373
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/babyCAG05.pdf">
+                            Unsupervised Learning Applied to Progressive Compression of Time-Dependent Geometry
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Baby.2005.ULAPCTDG.bib.txt">(BibTex)</a><br>
+                    T. Baby, Y. Kim, and A. Varshney <br>
+                    <i>Computers and Graphics</i><br>
+                    Vol 29, No 3, June 2005, pp 451 - 461
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/dagstuhl04.pdf">
+                            Computing and Displaying Intermolecular Negative Volume for Docking
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Lee.2005.CDINVD.bib.txt">(BibTex)</a><br>
+                    C. H. Lee and A. Varshney <br>
+                    <i>
+                        Scientific Visualization:
+                        The Visual Extraction of Knowledge from Data
+                    </i><br>
+                    Editors: G.-P. Bonneau, T. Ertl, G. M. Nielson, Springer-Verlag, 2005,
+                    ISBN: 3-540-26066-8
+                    <br /><br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub2003"> </a>
+    <br style="clear:left"><div class="head2">2003 - 2004</div><br>
+    <div>
+        <blockquote>
+            <ul>
+
+                <li>
+                    <b>
+                        <a href="./papers/lightcollagesVIS04.pdf">
+                            Light Collages: Lighting Design for Feature-Enhanced Visualization
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Lee.2004.LC.bib.txt">(BibTex)</a><br>
+                    C. H. Lee, X. Hao, and A. Varshney <br>
+                    <i>IEEE Visualization '04</i><br>
+                    October 10 - 15, 2004, Austin, TX, pp 281 - 288.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/hao_HPC04b.pdf">
+                            Efficient Solution of Poisson-Boltzmann Equation for Electrostatics of Large Molecules
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Hao.2004.ESPBEELM.bib.txt">(BibTex)</a><br>
+                    X. Hao and A. Varshney <br>
+                    <i>High-Performance Computing Symposium</i><br>
+                    April 18 - 22, 2004, Arlington, VA, pp 71 - 76.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/hao_HPC04a.pdf">
+                            Real-Time Visualization of Large Time-Varying Molecules
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Hao.2004.RTVLTVM.bib.txt">(BibTex)</a><br>
+                    X. Hao, A. Varshney, and S. Sukharev <br>
+                    <i>High-Performance Computing Symposium </i><br>
+                    April 18 - 22, 2004, Arlington, VA, pp 109 - 114.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/hao_tog04.pdf">
+                            Real-Time Rendering of Translucent Meshes
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Hao.2004.RTRTM.bib.txt">(BibTex)</a><br>
+                    X. Hao and A. Varshney <br>
+                    <i>ACM Transactions on Graphics </i><br>
+                    Vol 23, No 2, April 2004, pp 120 - 142
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/ark_sgp03.pdf">
+                            Statistical Point Geometry
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=dutslmvgk_I&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s&index=13" target="_blank">video</a>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kalaiah.2003.SPG.bib.txt">(BibTex)</a><br>
+                    A. Kalaiah and A. Varshney <br>
+                    <i>Eurographics Symposium on Geometry Processing</i><br>
+                    Editors: L. Kobbelt, P. Schroeder, H. Hoppe <br>
+                    June 23 - 25, 2003, Aachen, Germany, pp 107 - 115.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/i3d03.pdf">
+                            Interactive Subsurface Scattering for Translucent Meshes
+                        </a>
+                    </b>
+                    &nbsp;<a href="https://www.youtube.com/watch?v=uj1UcbBryBc&index=12&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s" target="_blank">video</a>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Hao.2003.ISSTM.bib.txt">(BibTex)</a><br>
+                    X. Hao, T. Baby, and A. Varshney <br>
+                    <i>ACM Symposium on Interactive 3D Graphics </i><br>
+                    April 28 - 30, 2003, Monterey, CA, pp 75 - 82.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/tvcg03.pdf">
+                            Modeling and Rendering of Points with Local Geometry
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kalaiah.2003.MRPLG.bib.txt">(BibTex)</a><br>
+                    A. Kalaiah and A. Varshney<br>
+                    <i>IEEE Transactions on Visualization and Computer Graphics</i><br>
+                    Vol. 9, No. 1, January 2003, pp 30 - 42.
+                    <br /><br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub2001"> </a>
+    <br style="clear:left"><div class="head2">2001 - 2002</div><br>
+    <div>
+        <blockquote>
+            <ul>
+                <li>
+                    <b>
+                        <a href="./papers/sciviz01.pdf">
+                            Hierarchical Image-based and Polygon-based Rendering for Large-Scale Visualizations
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Chang.2002.HIBPBRLSV.bib.txt">(BibTex)</a><br>
+                    C. Chang, Z. Li, A. Varshney, and Q. J. Ge <br>
+                    <i> Hierarchical and Geometric Methods in Scientific Visualization </i>,
+                    Springer Series: Mathematics and Visualization, <br>
+                    Editors H. Hagen, G. Farin, and B. Hamann, <br>
+                    ISBN 3-540-43313-9, pages 329 - 346, 2002.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href=http://www.lodbook.com>
+                            Level of Detail for 3D Graphics
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Luebke.2002.LD3DG.bib.txt">(BibTex)</a><br>
+                    D. Luebke, M. Reddy, J. Cohen, A. Varshney, B. Watson, and R. Huebner<br>
+                    <i> Morgan-Kaufmann, Inc.</i>
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/ipt02.pdf">
+                            A Real-Time Seamless Tiled Display for 3D Graphics
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Li.2002.RTSTD3DG.bib.txt">(BibTex)</a><br>
+                    Z. Li and A. Varshney<br>
+                    <i>Proceedings, Seventh Annual Symposium on Immersive Projection Technology (IPT 2002)</i><br>
+                    March 24 - 25, 2002, Orlando, FL
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/vda02.pdf">
+                            Representing Thermal Vibrations and Uncertainty in Molecular
+                            Surfaces
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Lee.2002.RTVUMS.bib.txt">(BibTex)</a><br>
+                    C. H. Lee and A. Varshney<br>
+                    <i>Proceedings SPIE Conference on Visualization and Data Analysis</i><br>
+                    January 20 - 25, 2002, San Jose, CA
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/egwr01.pdf">
+                            Differential Point Rendering
+                        </a>
+                    </b>
+					&nbsp;<a href="https://www.youtube.com/watch?v=gq70rca1P1I&list=PLz1O6fKX0ZR08hE6T0b9KtWY7Vf5j2V3s" target="_blank">video</a>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Kalaiah.2001.DPR.bib.txt">(BibTex)</a><br>
+                    A. Kalaiah and A. Varshney<br>
+                    <i>Rendering Techniques '01 </i> <br>
+                    editors S. J. Gortler and K. Myszkowski, Springer-Verlag, August 2001, pp. 139 - 150.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/hao_av_i3d01.pdf">
+                            Variable-Precision Rendering
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Hao.2001.VPR.bib.txt">(BibTex)</a><br>
+                    X. Hao and A. Varshney<br>
+                    <i> Proceedings, ACM Symposium on Interactive 3D Graphics </i><br>
+                    March 19 - 21, 2001, Research Triangle Park, NC, pp 149 - 158
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/DFM_01_21170.pdf">
+                            Haptic and Aural Rendering of a Virtual Milling Process
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Chang.2001.HARVMP.bib.txt">(BibTex)</a><br>
+                    C. Chang, A. Varshney, and Q. J. Ge<br>
+                    <i>Proceedings, ASME Sixth Design for Manufacturing Conference</i><br>
+                    Sept 9 - 12, 2001, Pittsburgh, PA, DETC2001/DFM21170.
+                    <br /><br />
+                </li>
+
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub2000"> </a>
+    <br style="clear:left"><div class="head2">1999 - 2000 </div><br>
+    <div>
+        <blockquote>
+            <ul>
+
+                <li>
+                    <b>
+                        <a href="./papers/adaptive_haptics.pdf">
+                            Continously-Adaptive Haptic Rendering
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/El-Sana.2000.CAHR.bib.txt">(BibTex)</a><br>
+                    J. El-Sana and A. Varshney <br>
+                    <i>Virtual Environments 2000</i> <br>
+                    editors J. Mulder and R. van Liere, Springer-Verlag, 2000, pp. 135 - 144
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/CADstrips.pdf">
+                            Efficiently Computing and Updating Triangle Strips for Real-Time Rendering
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/El-Sana.2000.ECUTSRTR.bib.txt">(BibTex)</a><br>
+                    J. El-Sana, F. Evans, A. Kalaiah, A. Varshney, S. Skiena, and E. Azanli <br>
+                    <i> Computer-Aided Design </i> <br>
+                    Vol. 32, No. 13, Nov 2000, pp 753 - 772
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/tahoe00.pdf">
+                            Hierarchical Rendering for Large-scale Visualizations
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Chang.2000.HRLSV.bib.txt">(BibTex)</a><br>
+                    C. Chang, A. Varshney, Q. J. Ge <br>
+                    <i>
+                        Proceedings of the NSF/DoE Lake Tahoe Workshop on Hierarchical Approximation and Geometrical
+                        Methods for Scientific Visualization
+                    </i><br>
+                    Tahoe City, CA, Oct 15 - 17, 2000
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/skipstrips.pdf">
+                            Skip Strips: Maintaining Triangle Strips for View Dependent Rendering
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/El-Sana.1999.SS.bib.txt">(BibTex)</a><br>
+                    J. El-Sana, E. Azanli, and A. Varshney<br>
+                    <i> IEEE Visualization '99 </i><br>
+                    Oct 24 - 29, 1999, San Francisco, CA, pp 131 - 138.
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/elsana_eg99.pdf">
+                            Generalized View-Dependent Simplification
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/El-Sana.1999.GVDS.bib.txt">(BibTex)</a><br>
+                    J. El-Sana and A. Varshney<br>
+                    <i>Computer Graphics Forum (Eurographics '99)</i><br>
+                    Volume 18, Number 3, 1999, pp 83 - 94
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/egve99.pdf">
+                            View-Dependent Topology Simplification
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/El-Sana.1999.VDTS.bib.txt">(BibTex)</a><br>
+                    J. El-Sana and A. Varshney<br>
+                    <i> Virtual Environments '99 </i> <br>
+                    editors M. Gervautz, A. Hildebrand, D. Schmalstieg,
+                    Springer-Verlag, 1999, pp 11 - 22
+                    <br /><br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub1998"> </a>
+    <br style="clear:left"><div class="head2">1997 - 1998</div><br>
+    <div>
+        <blockquote>
+
+            <ul>
+
+                <li>
+                    <b>
+                        <a href="./papers/elsana_tvcg98.pdf">
+                            Topology Simplification for Polygonal Virtual Environments
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/El-Sana.1998.TSPVE.bib.txt">(BibTex)</a><br>
+                    J. El-Sana and A. Varshney<br>
+                    <i>IEEE Transactions on Visualization and Computer Graphics </i><br>
+                    Vol. 4, No. 2, June 1998, pp 133 - 144
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/darsa_costa_av.pdf">
+                            Walkthroughs of Complex Environments using Image-Based Simplification
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Darsa.1998.WCEIBS.bib.txt">(BibTex)</a><br>
+                    L. Darsa, B. Costa, and A. Varshney<br>
+                    <i>Computers and Graphics </i><br>
+                    Vol. 22, No. 1, January 1998, pp 25 - 34
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/elsana_vis97.pdf">
+                            Controlled Simplification of Genus for Polygonal Models
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/El-Sana.1997.CSGPM.bib.txt">(BibTex)</a><br>
+                    J. El-Sana and A. Varshney<br>
+                    <i>Proceedings of the IEEE Visualization '97</i><br>
+                    Oct 19 - Oct 24, 1997, Phoenix, AZ, pp 403 - 412
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/DFM-4371.pdf">
+                            Enabling Virtual Reality for Large-Scale Mechanical CAD Datasets
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Varshney.1997.EVRLSMCADD.bib.txt">(BibTex)</a><br>
+                    A. Varshney, J. El-Sana, F. Evans, L. Darsa, B. Costa, and S. Skiena<br>
+                    <i>Proceedings of the ASME Design Engineering Technical Conference</i><br>
+                    DETC97/DFM-4371, September 14 - 17, 1997, Sacramento, CA
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_vd.pdf">
+                            Adaptive Real-Time Level-of-detail-based Rendering for Polygonal Models
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Xia.1997.ARTLRPM.bib.txt">(BibTex)</a><br>
+                    J. Xia, J. El-Sana, and A. Varshney <br>
+                    <i> IEEE Transactions on Visualization and Computer Graphics </i><br>
+                    Vol. 3, No. 2, June 1997, pp 171 - 183
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/mishra_collab.pdf">
+                            CollabCAD: A Toolkit for Integrated Synchronous and Asynchronous Sharing of CAD Applications
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Mishra.1997.CollabCAD.bib.txt">(BibTex)</a><br>
+                    P. Mishra, A. Varshney, and A. Kaufman<br>
+                    <i>Proceedings of the TeamCAD '97</i><br>
+                    May 12 - 13, 1997, Atlanta, GA, pp 131 - 137
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/darsa_i3d97.pdf">
+                            Navigating Static Environments Using Image-Space Simplification and Morphing
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Darsa.1997.NSEUISSM.bib.txt">(BibTex)</a><br>
+                    L. Darsa, B. Costa, and A. Varshney<br>
+                    <i>Proceedings of the Symposium on 3D Interactive Graphics</i><br>
+                    April 27 - 30, 1997, Providence, RI, pp 25 - 34
+                    <br /><br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub1996"> </a>
+    <br style="clear:left"><div class="head2">1995 - 1996</div><br>
+    <div>
+        <blockquote>
+            <ul>
+                <li>
+                    <b>
+                        <a href="./papers/av_vd_vis.pdf">
+                            Dynamic View-Dependent Simplification for Polygonal Models
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Xia.1996.DVDSPM.bib.txt">(BibTex)</a><br>
+                    J. Xia and A. Varshney <br>
+                    <i>Proceedings of the IEEE Visualization '96</i><br>
+                    Oct 27 - Nov 1, 1996, San Francisco, CA, pp 327 - 334
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_ts.pdf">
+                            Optimizing Triangle Strips for Fast Rendering
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Evans.1996.OTSFR.bib.txt">(BibTex)</a><br>
+                    F. Evans, S. Skiena, and A. Varshney <br>
+                    <i>Proceedings of the IEEE Visualization '96</i><br>
+                    Oct 27 - Nov 1, 1996, San Francisco, CA, pp 319 - 326
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_finance.pdf">
+                            FINESSE:  A Financial Information Spreadsheet
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Varshney.1996.FINESSE.bib.txt">(BibTex)</a><br>
+                    A. Varshney and A. Kaufman<br>
+                    <i>Proceedings of the Information Visualization '96</i><br>
+                    Oct 28 - 29, 1996, San Francisco, CA, pp 70 - 71
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/simp_env.pdf">
+                            Simplification Envelopes
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Cohen.1996.SE.bib.txt">(BibTex)</a><br>
+                    J. Cohen, A. Varshney, D. Manocha, G. Turk, H. Weber, P. Agarwal, F. P. Brooks, Jr.  and W. V. Wright<br>
+                    <i>SIGGRAPH 96 Proceedings, Annual Conference Series, ACM SIGGRAPH</i><br>
+                    Aug 4 - 9, 1996, New Orleans, LA, pp 119 - 128
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/stripe.pdf">
+                            Stripe: A Software Tool For Efficient Triangle Strips
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Evans.1996.Stripe.bib.txt">(BibTex)</a><br>
+                    F. Evans, S. Skiena and A. Varshney<br>
+                    <i>Visual Proceedings, ACM SIGGRAPH</i><br>
+                    Aug 4 - 9, 1996, New Orleans, LA, pp 153
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_gen.pdf">
+                            Controlled Topology Simplification
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/He.1996.CTS.bib.txt">(BibTex)</a><br>
+                    T. He, L. Hong, A. Varshney, and S. Wang <br>
+                    <i>IEEE Transactions on Visualization and Computer Graphics</i> <br>
+                    Vol. 2, No. 2, June 1996, pp 171 - 184
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_interface.pdf">
+                            Defining, Computing, and Visualizing Molecular Interfaces
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Varshney.1995.DCVMI.bib.txt">(BibTex)</a><br>
+                    A. Varshney, F. P. Brooks, Jr., D. C. Richardson, W. V. Wright, and D. Manocha <br>
+                    <i>Proceedings of the IEEE Visualization '95</i><br>
+                    Oct 29 - Nov 3, 1995, Atlanta, GA, pp 36 - 43
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/he_voxel.pdf">
+                            Voxel-Based Object Simplification
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/He.1995.VBOS.bib.txt">(BibTex)</a><br>
+                    T. He, L. Hong, A. Kaufman, A. Varshney, and S. Wang <br>
+                    <i>Proceedings of the IEEE Visualization '95</i><br>
+                    Oct 29 - Nov 3, 1995, Atlanta, GA, pp 296 - 303
+                    <br /><br />
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+
+    <!-------------------------------------------------------------------->
+    <a name="#pub1994"> </a>
+    <br style="clear:left"><div class="head2">1992 - 1994</div><br>
+    <div>
+        <blockquote>
+            <ul>
+                <li>
+                    <b>
+                        <a href="./papers/surf_surf.pdf">
+                            Evaluating Surface Intersections in Lower Dimensions
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Manocha.1994.ESILD.bib.txt">(BibTex)</a><br>
+                    D. Manocha, A. Varshney, and H. Weber<br>
+                    <i>Curves and Surfaces in Geometric Design</i><br>
+                    editors P. J. Laurent, A. Le Mehaute, and L. L.  Schumaker, A. K. Peters, Ltd., pp 327 - 334, 1994.
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_cga.pdf">
+                            Linearly Scalable Computation of Smooth Molecular Surfaces
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Varshney.1994.LSCSMS.bib.txt">(BibTex)</a><br>
+                    A. Varshney, F. P. Brooks, Jr., and W. V. Wright<br>
+                    <i>IEEE Computer Graphics and Applications</i><br>
+                    Sept 1994, Vol. 14, No. 5, pp 19 - 25
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_cg94.pdf">
+                            Interactive Visualization of Weighted Three-dimensional Alpha Hulls
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Varshney.1994.IVWTDAH.bib.txt">(BibTex)</a><br>
+                    A. Varshney, F. P. Brooks, Jr., and W. V. Wright<br>
+                    <i>
+                        Third Annual Video Review of Computational Geometry in Proceedings of the
+                        Tenth Annual Symposium on Computational Geometry
+                    </i><br>
+                    Stony Brook, NY, June 6 - 8, 1994, pp 395 - 396
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/av_vis93.pdf">
+                            Fast Analytical Computation of Richards's Smooth Molecular Surface
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Varshney.1993.FACRSMS.bib.txt">(BibTex)</a><br>
+                    A. Varshney and F. P. Brooks, Jr.<br>
+                    <i>Proceedings of the IEEE Visualization '93</i> <br>
+                    Oct 25 - 29, 1993, San Jose, CA, pp 300 - 307.
+                    <br /><br />
+                </li>
+
+                <li>
+                    <b>
+                        <a href="./papers/av_rad.pdf">
+                            An Environment-Projection Approach to Radiosity for Mesh-Connected Computers
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Varshney.1992.EPARMCC.bib.txt">(BibTex)</a><br>
+                    A. Varshney and J. F. Prins <br>
+                    <i>Proceedings of the Third Eurographics Workshop on Rendering</i> <br>
+                    Bristol, England, May 17 - 20, 1992, pp 271 - 281
+                    <br /><br />
+                </li>
+                <li>
+                    <b>
+                        <a href="./papers/i3d92.pdf">
+                            Real-Time Procedural Textures
+                        </a>
+                    </b>
+                    &nbsp;<a onclick="return popup(this, 'Bib')"
+                             href="./papers/BibTex/Rhoades.1992.RTPT.bib.txt">(BibTex)</a><br>
+                    J. Rhoades, G. Turk, A. Bell, A. State, U. Neumann, and A. Varshney<br>
+                    <i>Computer Graphics</i> <br>
+                    Vol. 25, No. 2, 1992, pp 95 - 100.
+                    <br /><br />
+                </li>
+
+            </ul>
+        </blockquote>
+    </div>
+    <!--#include file = "templates/bottom.html" -->
+</body>
+</html>

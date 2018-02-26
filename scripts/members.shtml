@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>GVIL Members</title>
+    <link rel="stylesheet" href="styles/gvil.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.png" />
+</head>
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0">
+    <!--#include file = "templates/top.asp" -->
+    <p><div class="head1">Members</div></p>
+    <br style="clear:left" />
+    <div class="head2">Faculty</div>
+    <br style="clear:left" />
+    <a name="varshney"></a>
+    <div class="memberpic">
+        <a href="http://www.cs.umd.edu/~varshney" target="_blank">
+            <img border="0" src="phimages/varshney.png" alt="Amitabh Varshney's photo" />
+        </a><br />
+        <a href="http://www.cs.umd.edu/~varshney" target="_blank">Amitabh Varshney</a>
+    </div>
+    <a name="zwicker"></a>
+	<div class="memberpic">
+        <a href="http://cs.umd.edu/~zwicker" target="_blank">
+            <img border="0" src="phimages/zwicker.png" alt="Matthias Zwicker's photo">
+        </a><br />
+        <a href="http://cs.umd.edu/~zwicker" target="_blank">Matthias Zwicker</a>
+    </div>
+	<br style="clear:left" />
+		
+    <div class="head2">Affiliated Faculty</div> <br />
+    <a name="defloriani"></a>
+    <div class="memberpic">
+        <a href="http://www.umiacs.umd.edu/people/deflo"><img border="0" src="phimages/floriani.png" alt="Leila De Floriani's
+photo" /></a>
+        <br />
+        <a href="http://www.umiacs.umd.edu/~deflo">Leila De Floriani</a>
+    </div>
+    <a name="gupta"></a>
+    <div class="memberpic">
+        <a href="http://ame-www.usc.edu/bio/gupta/" target="_blank">
+            <img border="0" src="phimages/gupta.png" alt="Satyandra K. Gupta's photo">
+        </a><br />
+        <a href="http://ame-www.usc.edu/bio/gupta/" target="_blank">Satyandra K. Gupta</a>
+    </div>
+    <a name="jaja"></a>
+    <div class="memberpic">
+        <a href="http://www.umiacs.umd.edu/~joseph/" target="_blank">
+            <img border="0" src="phimages/joseph_0.png" alt="Joseph JaJa's photo">
+        </a><br />
+        <a href="http://www.umiacs.umd.edu/~joseph/" target="_blank">Joseph JaJa</a>
+    </div>
+    <a name="mount"></a>
+    <div class="memberpic">
+        <a href="http://www.cs.umd.edu/~mount" target="_blank">
+            <img border="0" src="phimages/dmount_thumb.png" alt="David Mount 's photo">
+        </a><br />
+        <a href="http://www.cs.umd.edu/~mount" target="_blank">David Mount</a>
+    </div>
+    <a name="samet"></a>
+    <div class="memberpic">
+        <a href="http://www.cs.umd.edu/~hjs" target="_blank">
+            <img border="0" src="phimages/hanan_thumb.png" alt="Hanan Samet's photo">
+        </a><br />
+        <a href="http://www.cs.umd.edu/~hjs" target="_blank">Hanan Samet</a>
+    </div>
+
+    <!-- <a name="jacobs"></a> -->
+    <!-- <div class="memberpic"> -->
+    <!--     <a href="http://www.cs.umd.edu/~djacobs"target="_blank"> -->
+    <!--         <img border="0" src="phimages/dj_thumb.png" alt="David Jacobs' photo"></a><br /> -->
+    <!--     <a href="http://www.cs.umd.edu/~djacobs" target="_blank">David Jacobs</a>     -->
+    <!-- </div> -->
+
+    <br style="clear:left" />
+    <div class="head2">Assistant Research Scientists</div>
+    <br style="clear:left" />
+	
+	<div class="memberpic">
+        <a href="https://changqingzou.weebly.com" target="_blank"><img border=0 src="phimages/changqing_zou.png" alt="Changqing Zou's photo" /></a><br />
+        <b><a href="https://changqingzou.weebly.com" target="_blank">Changqing Zou</a></b>
+    </div>
+	
+
+    <div class="memberpic">
+        <a href="http://www.umiacs.umd.edu/~sujal" target="_blank"><img border=0 src="phimages/sujalSmall.png" alt="Sujal Bista's photo" /></a><br />
+        <b><a href="http://www.umiacs.umd.edu/~sujal" target="_blank">Sujal Bista</a></b>
+    </div>
+	   
+    <br style="clear:left"><div class="head2">Research Staff</div> <br />
+	   
+	<div class="memberpic"> 
+        <a href="https://www.linkedin.com/in/sida-li-64427958/" target="_blank"><img border=0 src="phimages/sida.png" alt="Sida Li photo" /></a><br />
+        <b><a href="https://www.linkedin.com/in/sida-li-64427958/" target="_blank">Sida Li</a></b>
+	</div>
+	
+	<div class="memberpic"> 
+        <a href="https://www.linkedin.com/in/eric-lee-6a598156/" target="_blank"><img border=0 src="phimages/ericlee.png" alt="Eric Lee photo" /></a><br />
+        <b><a href="https://www.linkedin.com/in/eric-lee-6a598156/" target="_blank">Eric Lee</a></b>
+	</div>
+	
+	<div class="memberpic"> 
+        <a href="http://www.umiacs.umd.edu/people/jheager2" target="_blank"><img border=0 src="phimages/jon.jpg" alt="Jonathan Heagerty photo" /></a><br />
+        <b><a href="http://www.umiacs.umd.edu/people/jheager2" target="_blank">Jonathan Heagerty</a></b>
+	</div>
+
+    <br style="clear:left" />
+    <div class="head2">Graduate Students</div> <br />
+
+    <div class="memberpic">
+        <a href="http://www.cs.umd.edu/~cheng" target="_blank"><img border=0 src="phimages/hsueh.png" alt="Hsueh-Chien Cheng's photo" /></a><br />
+        <b><a href="http://www.cs.umd.edu/~cheng" target="_blank">Hsueh-Chien Cheng</a></b>
+    </div>
+
+    <div class="memberpic">
+        <img border=0 src="phimages/eric.png" alt="Eric Krokos's photo" /><br />
+        <b><a target="_blank">Eric Krokos</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.duruofei.com" target="_blank"><img border=0 src="phimages/roufei.png" alt="Ruofei Du's photo" /></a><br />
+        <b><a href="http://www.duruofei.com" target="_blank">Ruofei Du</a></b>
+    </div>
+
+    <div class="memberpic">
+        <img border=0 src="phimages/xuetong.png" alt="Xuetong Sun's photo" /><br />
+        <b><a target="_blank">Xuetong Sun</a></b>
+    </div>
+	   
+    <div class="memberpic">
+         <a href="http://xiaoxumeng1993.wixsite.com/xiaoxumeng" target="_blank"><img border=0 src="phimages/xiaoxu.png" alt="Xiaoxu Meng's photo" /></a><br />
+        <b><a href="http://xiaoxumeng1993.wixsite.com/xiaoxumeng" target="_blank">Xiaoxu Meng</a></b>
+    </div>
+    
+	<br style="clear:left">
+	
+	<div class="memberpic"> 
+        <a href="https://www.cs.umd.edu/people/tlarrue" target="_blank"><img border=0 src="phimages/tara.png" alt="Tara Larrue photo" /></a><br />
+        <b><a href="https://www.cs.umd.edu/people/tlarrue" target="_blank">Tara Larrue</a></b>
+	</div>
+
+	
+	<div class="memberpic"> 
+        <a href="https://www.cs.umd.edu/people/lishuo15" target="_blank"><img border=0 src="phimages/shuo.jpg" alt="Shuo Li photo" /></a><br />
+        <b><a href="https://www.cs.umd.edu/people/lishuo15" target="_blank">Shuo Li</a></b>
+	</div>
+	   
+    <div class="memberpic">
+        <img border=0 src="phimages/gregory.jpg" alt="Gregory Kramida's photo" /><br />
+        <b><a href="http://www.cs.umd.edu/people/gkramida" target="_blank">Gregory Kramida</a></b>
+    </div>
+	
+    <br style="clear:left"><div class="head2">Former Students</div> <br />
+
+    <div class="memberpic">
+        <a href="http://www.linkedin.com/in/thomasbaby"><img border=0 src="phimages/thomas.png" alt="Thomas Baby's photo" /></a><br />
+        <b><a href="http://www.linkedin.com/in/thomasbaby" target="_blank">Thomas Baby</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.columbia.edu/~xh2108/" target="_blank"> <img border=0 src="phimages/hao.png" alt="Xuejun Hao's photo" /></a><br />
+        <a href="http://www.columbia.edu/~xh2108/" target="_blank"><b>Xuejun Hao</b>
+        </a>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://cau.ac.kr/~chlee/" target="_blank"> <img border=0 src="phimages/chlee01_sm.png" alt="Chang Ha Lee's photo"></a><br />
+        <b><a href="http://cau.ac.kr/~chlee/" target="_blank"> Chang Ha Lee</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.cs.umd.edu/~ipcy/" target="_blank"> <img border=0 src="phimages/Horace_TH.png" alt="Cheuk Yiu Ip's photo" /> </a> <br />
+        <a href="http://www.cs.umd.edu/~ipcy/"> <b>Cheuk Yiu Ip</b> </a>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.derek.juba.name/" target="_blank"> <img border=0 src="phimages/derek_TH.png" alt="Derek Juba's photo"> </a><br />
+        <b><a href="http://www.derek.juba.name/" target="_blank">Derek Juba</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.linkedin.com/in/aravindkalaiah"><img border=0 src="phimages/aravind.png" alt="Aravind Kalaiah's photo" /><a/><br />
+        <b><a href="http://www.linkedin.com/in/aravindkalaiah" target="_blank">Aravind Kalaiah</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.cs.umd.edu/~ymkim" target="_blank"><img border=0 src="phimages/ym-2005-th.png" alt="Youngmin Kim's photo"></a><br />
+        <b><a href="http://www.cs.umd.edu/~ymkim" target="_blank">Youngmin Kim</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.linkedin.com/in/zhiyun" target="_blank"><img border=0 src="phimages/zhiyun.png" alt="Zhiyun Li's photo" /></a><br />
+        <b><a href="http://www.linkedin.com/in/zhiyun" target="_blank">Zhiyun Li</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://w3.impa.br/~andmax/" target="_blank"><img border=0 src="phimages/andmax.png" alt="Andre Maximo's photo" /></a><br />
+        <a href="http://w3.impa.br/~andmax/" target="_blank"><b>Andre Maximo</b></a>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.cs.umd.edu/~rob" target="_blank"> <img border=0 src="phimages/rob_TH.png" alt="Rob Patro's photo"></a><br />
+        <b><a href="http://www.cs.umd.edu/~rob target="_blank">Rob Patro</a>
+        </b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.umiacs.umd.edu/~yalcin" target="_blank"> <img border=0 src="phimages/adil.png" alt="M. Adil Yalcin's photo" /></a><br />
+        <b><a href="http://www.umiacs.umd.edu/~yalcin/" target="_blank">M. Adil Yalcin</a></b>
+    </div>
+
+    <div class="memberpic">
+        <a href="http://www.umiacs.umd.edu/~phi/" target="_blank"><img border=0 src="phimages/yyang-th.png" alt="Yang Yang's photo" /></a><br />
+        <b><a href="http://www.umiacs.umd.edu/~phi/" target="_blank">Philip (Yang) Yang</a></b>
+    </div>
+	
+    <div class="memberpic">
+        <img border=0 src="phimages/patricia.png" alt="Patricia Sazama's photo" /><br />
+        <b><a href="http://www.linkedin.com/in/patricia-sazama-44938271" target="_blank">Patricia Sazama</a></b>
+    </div>
+    
+	<div class="memberpic"> 
+        <a href="http://cs.umd.edu/~somay/" target="_blank"><img border=0 src="phimages/somay.png" alt="Somay Jain photo" /></a><br />
+        <b><a href="http://cs.umd.edu/~somay/" target="_blank">Somay Jain</a></b>
+	</div>
+
+	<div class="memberpic"> 
+        <a href="https://mukulagarwal.com/" target="_blank"><img border=0 src="phimages/mukul_agarwal.png" alt="Mukul Agarwal photo" /></a><br />
+        <b><a href="https://mukulagarwal.com/" target="_blank">Mukul Agarwal</a></b>
+	</div>
+    
+	<!-- <br style="clear:left"> -->
+        
+    <!--<br style="clear:left">
+    <blockquote>
+        <b>
+            Thomas Baby<br />
+            Aravind Kalaiah<br />
+        </b>
+    </blockquote>-->
+
+    <br style="clear:left"><div class="head2">Undergraduate Students</div> <br />
+    <blockquote>
+        <b>
+            David Apgar<br />
+            Steve Betten<br />
+            Dustin Chertoff<br />
+            Mike Dulany<br />
+            Vikas Patel<br />
+            Ben Stewart<br />
+            Mark Talbott<br />
+			<a href="">Patrick Owen</a><br />
+			Harry Wandersman<br />
+        </b>
+    </blockquote>
+
+    <!--#include file = "templates/bottom.asp" -->
+</body>
+</html>
