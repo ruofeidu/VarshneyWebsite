@@ -66,3 +66,11 @@ img.flip {
   float: right;
   /* add clearfix if needed */
 }
+
+.keywords {
+    font-size: 80%;
+}
+
+.downloads {
+    margin-top: 1em;
+}
