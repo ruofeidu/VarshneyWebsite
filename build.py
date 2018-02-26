@@ -77,46 +77,62 @@ def write_bib(b):
     if 'http' in filename:
         return
     print(filename)
+
     with open(filename, 'w') as f:
         f.write('@%s{%s,<br/>\n' % (b['type'], b['bibname']))
-        f.write('    title = "%s",<br/>\n' % b['title'])
-        f.write('    author = "%s",<br/>\n' % b['author'])
-        f.write('    %s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
-        f.write('    year = "%s",<br/>\n' % b['year'])
-        f.write('    volume = "%s",<br/>\n' % b['volume'])
-        f.write('    pages = "%s"<br/>\n' % b['pages'])
+        f.write('&nbsp&nbsptitle = "%s",<br/>\n' % b['title'])
+        f.write('&nbsp&nbspauthor = "%s",<br/>\n' % b['author'])
+        f.write('&nbsp&nbsp%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
+        f.write('&nbsp&nbspyear = "%s",<br/>\n' % b['year'])
+        f.write('&nbsp&nbspvolume = "%s",<br/>\n' % b['volume'])
+        f.write('&nbsp&nbsppages = "%s"<br/>\n' % b['pages'])
         f.write('}<br/>\n')
+
+    filename = 'bib/' + b['bib'] + '.apa'
+    print(filename)
+
+    with open(filename, 'w') as f:
+        f.write('%s.' % b['author'])
+        f.write(' (%s).<br/> ' % (b['year']))
+        f.write('%s.' % b['title'])
+        f.write(' <br/><i>%s</i>' % b['booktitle'])
+        f.write(', %s' % b['pages'].replace('--', '-'))
 
 
 def write_data_to_markdown(file_name):
-    line_media = '* %s, [%s](%s), %s%s %s, %s.\n'
-    line_students = '<div class="2u 12u$(medium) center"><span class="image fit">' \
+    LINE_MEDIA = '* %s, [%s](%s), %s%s %s, %s.\n'
+    LINE_STUDENTS = '<div class="2u 12u$(medium) center"><span class="image fit">' \
                     '<a href="%s" target="_blank"><img src="photos/%s" alt="%s" class="face"/></a></span>' \
                     '<h4 class="center"><a href="%s" target="_blank" class="name">%s</a></h4></div>\n'
     # (m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'], m['keywords'], m['url'], m['video'], m['code'], m['slides'], m['apa'], m['bib']  )
-    line_papers = '<div class="3u 12u$(medium)"><span class="image fit"><img src="teaser/%s" alt="%s" /></span></div>' \
-                  '<div class="9u 12u$(medium)"><h4><a href="%s">%s</a></h4>' \
-                  '<p>' \
-                  '<span class="authors">%s<span>' \
-                  '<br/>' \
-                  '<span class="booktitle">%s</span>' \
-                  '<br/>' \
-                  '<span class="keywords">%s</span>' \
-                  '<br/>' \
-                  '<span class="download">Download: <a href="%s" target="_blank">[pdf]</a> %s%s%s | ' \
-                  'Export <a href="%s" class="bibtex">[Citation]</a> <a href="%s" class="bibtex">[BibTeX]</a></span>' \
+    LINE_PAPERS = '<div class="3u 12u$(medium) pub-pic"><span class="image fit"><img src="teaser/%s" alt="%s" /></span></div>' \
+                  '<div class="9u 12u$(medium) pub-info"><h4><a href="%s" target="_blank">%s</a></h4>' \
+                  '<p class="authors">%s</p>' \
+                  '<p class="booktitle">%s</p>' \
+                  '<p class="keywords">keywords: %s</p>' \
+                  '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s | ' \
+                  'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                   '</p></div>'
+    LINE_UNPUBLISHED = '<div class="3u 12u$(medium) pub-pic"><span class="image fit"><img src="teaser/%s" alt="%s" /></span></div>' \
+                       '<div class="9u 12u$(medium) pub-info"><h4>%s</h4>' \
+                       '<p class="authors">%s</p>' \
+                       '<p class="booktitle">%s</p>' \
+                       '<p class="keywords">keywords: %s</p>' \
+                       '<div class="downloads">Download: [pdf] %s%s%s | ' \
+                       'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
+                       '</p></div>'
 
     CATEGORY = '### %s\n'
     YEAR = '### %s\n'
     NEW_ROW = '<div class="row">\n'
+    NEW_PUB = '<div class="row pub">\n'
     ROW_END = '</div>\n'
 
     with open("data/%s.txt" % file_name, 'w') as f:
         f.write('[comment]: <> (This markdown file is generated from %s.json by build.py)\n' % file_name)
         if file_name == 'media':
             for m in reversed(data['media']):
-                f.write(line_media % (
+                f.write(LINE_MEDIA % (
                     m['publisher'], m['title'], m['url'], '(Video) ' if m['video'] else '', m['month'], m['day'],
                     m['year']))
         elif file_name == 'students':
@@ -133,7 +149,7 @@ def write_data_to_markdown(file_name):
                         if count and count % 5 == 0:
                             f.write(ROW_END)
                             f.write(NEW_ROW)
-                        f.write(line_students % (m['url'], m['photo'], m['name'] + "'s photo", m['url'], m['name']))
+                        f.write(LINE_STUDENTS % (m['url'], m['photo'], m['name'] + "'s photo", m['url'], m['name']))
                         count += 1
                 f.write(ROW_END)
         elif file_name == 'papers':
@@ -145,20 +161,43 @@ def write_data_to_markdown(file_name):
                     m['bib'] = m['bibname']
                 write_bib(m)
                 m['url'] = 'papers/' + m['url'] if not 'http' in m['url'] else m['url']
-                m['bib'] = 'bib/' + m['bib'] + '.bib'
-                m['apa'] = 'bib/' + m['bib'] + '.apa'
-                m['video'] = '| <a href="%s" target="blank">[video]</a>' % m['video'] if m['video'] else ''
-                m['code'] = '| <a href="%s" target="blank">[code]</a>' % m['code'] if m['code'] else ''
-                m['slides'] = '| <a href="%s" target="blank">[slides]</a>' % m['slides'] if m['slides'] else ''
+                bib = m['bib']
+                m['bib'] = 'bib/' + bib + '.bib'
+                m['apa'] = 'bib/' + bib + '.apa'
+                if not m['video']:
+                    if m['youtube']:
+                        m['video'] = m['youtube']
+                    else:
+                        m['video'] = m['vimeo']
+                m['video'] = ' <a href="%s" target="blank">[video]</a>' % m['video'] if m['video'] else ''
+                m['code'] = ' <a href="%s" target="blank">[code]</a>' % m['code'] if m['code'] else ''
+                m['slides'] = ' <a href="%s" target="blank">[slides]</a>' % m['slides'] if m['slides'] else ''
+                if 'web' in m and m['web']:
+                    m['web'] = ' <a href="%s" target="blank">[web]</a>' % m['web']
+                else:
+                    m['web'] = ''
+                if not m['published']:
+                    m['booktitle'] = 'To Appear In ' + m['booktitle']
+                    m['url'] = ''
+                if m['award']:
+                    m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
+                if m['doi']:
+                    m['doi'] = ' <a href="https://doi.org/%s" target="_blank">[doi]</a>' % m['doi']
             for y in sorted(years, reverse=True):
                 f.write(YEAR % y)
                 count = 0
                 for m in data['papers']:
                     if m['year'] == y and m['visible']:
-                        f.write(NEW_ROW)
-                        f.write(line_papers % (
-                            m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'], m['keywords'],
-                            m['url'], m['video'], m['code'], m['slides'], m['apa'], m['bib']))
+                        f.write(NEW_PUB)
+                        if m['published']:
+                            f.write(LINE_PAPERS % (
+                                m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
+                                m['keywords'],
+                                m['url'], m['doi'], m['video'], m['code'], m['slides'], m['web'], m['apa'], m['bib']))
+                        else:
+                            f.write(LINE_UNPUBLISHED % (
+                                m['image'], m['title'], m['title'], m['author'], m['booktitle'],
+                                m['keywords'], m['video'], m['code'], m['slides'], m['apa'], m['bib']))
                         f.write(ROW_END)
                         count += 1
 

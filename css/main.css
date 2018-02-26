@@ -15,6 +15,14 @@
 	height:95%;
 }
 
+a {
+    border-bottom: none;
+}
+
+a:hover {
+    border-bottom: dotted 1px;
+}
+
 .center {
     text-align: center;
 }
@@ -68,9 +76,41 @@ img.flip {
 }
 
 .keywords {
-    font-size: 80%;
+    font-size: 70%;
 }
 
 .downloads {
-    margin-top: 1em;
+    position:absolute;
+    bottom: 0;
+    min-width: 100vw;
+    margin: 0 0 1.5em 0;
+}
+
+.pub-info{
+    margin: 0;
+}
+
+.pub-info>p{
+    margin: 0;
+}
+
+.pub {
+    position: relative;
+}
+
+.booktitle {
+    font-style: italic;
+}
+
+.authors {
+
+}
+
+.title {
+    font-weight: bold;
+}
+
+.award {
+    color: #f56a6a;
+    font-weight: bold;
 }
