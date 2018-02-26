@@ -3933,10 +3933,10 @@
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
 					margin: 0 0 4em 0;
-					height: 25em;
-					max-height: 50vh;
+					height: 50vh;
+					max-height: 70vh;
 					min-height: 18em;
-					width: 100%;
+					width: 50vh;
 				}
 
 		}

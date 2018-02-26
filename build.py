@@ -9,6 +9,7 @@ import markdown
 re_markdown = re.compile("<!--\s*include\s*:\s*data\/(.+)\.txt\s*?-->")
 re_html = re.compile("<!--\s*include\s*:\s*(.+)\.html\s*?-->")
 
+html, md, data, people = {}, {}, {}, {}
 
 def remove_comments(html):
     return re.sub("(<!--.*?-->)", "", html, flags=re.DOTALL)
@@ -93,7 +94,7 @@ def write_bib(b):
     print(filename)
 
     with open(filename, 'w') as f:
-        f.write('%s.' % b['author'])
+        f.write('%s.' % b['apauthor'])
         f.write(' (%s).<br/> ' % (b['year']))
         f.write('%s.' % b['title'])
         f.write(' <br/><i>%s</i>' % b['booktitle'])
@@ -113,7 +114,7 @@ def write_data_to_markdown(file_name):
                   '<div class="9u 12u$(medium) pub-info"><h4><a href="%s" target="_blank">%s</a></h4>' \
                   '<p class="authors">%s</p>' \
                   '<p class="booktitle">%s</p>' \
-                  '<p class="keywords">keywords: %s</p>' \
+                  '<p class="keywords">%s</p>' \
                   '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s | ' \
                   'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                   '</p></div>'
@@ -122,7 +123,7 @@ def write_data_to_markdown(file_name):
                        '<div class="9u 12u$(medium) pub-info"><h4>%s</h4>' \
                        '<p class="authors">%s</p>' \
                        '<p class="booktitle">%s</p>' \
-                       '<p class="keywords">keywords: %s</p>' \
+                       '<p class="keywords">%s</p>' \
                        '<div class="downloads">Download: [pdf] %s%s%s | ' \
                        'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                        '</p></div>'
@@ -143,6 +144,8 @@ def write_data_to_markdown(file_name):
         elif file_name == 'students':
             categories = []
             for m in data['students']:
+                m['name'] = m['name'].strip()
+                people[m['name']] = m
                 if m['category'] not in categories:
                     categories.append(m['category'])
             for c in categories:
@@ -164,6 +167,14 @@ def write_data_to_markdown(file_name):
                     years.append(m['year'])
                 if not m['bib']:
                     m['bib'] = m['bibname']
+                authors = m['author'].split(' and')
+                m['apauthor'] = ''
+                for i, author in enumerate(authors):
+                    if i > 0:
+                        m['apauthor'] += ', '
+                        if i == len(authors) - 1:
+                            m['apauthor'] += 'and '
+                    m['apauthor'] += author.strip()
                 write_bib(m)
                 m['url'] = 'papers/' + m['url'] if not 'http' in m['url'] else m['url']
                 bib = m['bib']
@@ -188,6 +199,36 @@ def write_data_to_markdown(file_name):
                     m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
                 if m['doi']:
                     m['doi'] = ' <a href="https://doi.org/%s" target="_blank">[doi]</a>' % m['doi']
+                m['author'] = ''
+                for i, author in enumerate(authors):
+                    if i > 0:
+                        if len(authors) > 2:
+                            m['author'] += ', '
+                        else:
+                            m['author'] += ' '
+                        if i == len(authors) - 1:
+                            m['author'] += 'and '
+                    a = author.strip()
+                    if a in people:
+                        m['author'] += '<a href="%s" target="_blank">%s</a>' % (people[a]['url'], a)
+                    else:
+                        m['author'] += a
+                if m['keywords']:
+                    m['keywords'] = "keywords: %s" % m['keywords']
+                if m['published'] and m['type'] == 'article':
+                    pages = m['pages'].replace('--', ',')
+                    pages = pages.replace('-', ',')
+                    pages = pages.split(',')
+                    # print(m['title'])
+                    # print(pages)
+                    if len(pages) == 2:
+                        m['pstart'] = pages[0].strip()
+                        m['pend'] = pages[1].strip()
+                        m['booktitle'] += "<br/>Vol. %s, No. %s, pp. %s-%s." % (
+                            m['volume'], m['number'], m['pstart'], m['pend'])
+                    else:
+                        m['booktitle'] += "<br/>Vol. %s, No. %s." % (m['volume'], m['number'])
+
             for y in sorted(years, reverse=True):
                 f.write(YEAR % y)
                 count = 0
@@ -211,8 +252,6 @@ html_files = ['header', 'footer', 'contact', 'menu', 'sidebar', 'banner']
 data_files = ['media', 'students', 'papers']
 md_files = ['bio', 'media', 'activities', 'students', 'ungrads', 'papers']
 build_files = ['index', 'media', 'activities', 'students', 'publications']
-
-html, md, data = {}, {}, {}
 
 # First, parse Json Data and write to Markdown files
 for f in data_files:
