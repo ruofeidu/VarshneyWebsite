@@ -1,9 +1,9 @@
 # Dr. Varshney Website
 * Written in Python + Markdown + HTML
-* Students
-** All students are structured as JSON objects now.
-** It's easier to add new people or hide people
-** For example
+* Temporary site are located at http://www.cs.umd.edu/gvil/varshney/
+## Students
+* All students are structured as JSON objects now so it's easier to add new people or hide people
+* For example:
 ```json
 {
     "url": "http://www.duruofei.com",
@@ -19,12 +19,8 @@
     "year": 2013
 }
 ```
-** Need advice whether we put Affiliated Faculty or not, or append more
-* Publications
-** Still linked to old page now,
-** The new one is here:
-** http://www.cs.umd.edu/gvil/varshney/publications.html
-** Every paper is structured now, so it's easier to generate BibTeX, change visualization, and add filters in the future:
+## Publications
+* Every paper is structured as JSON objects now, so it's easier to generate BibTeX, change visualization, and add filters in the future:
 ```json
 {
     "bibname": "HsuehChien2018Winnow",
