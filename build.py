@@ -250,7 +250,7 @@ def write_data_to_markdown(file_name):
 
 html_files = ['header', 'footer', 'contact', 'menu', 'sidebar', 'banner']
 data_files = ['media', 'students', 'papers']
-md_files = ['bio', 'media', 'activities', 'students', 'ungrads', 'papers']
+md_files = ['bio', 'nav', 'media', 'activities', 'students', 'ungrads', 'papers']
 build_files = ['index', 'media', 'activities', 'students', 'publications']
 
 # First, parse Json Data and write to Markdown files
