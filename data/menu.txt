@@ -2,14 +2,17 @@
 <li><a href="index.html">Homepage</a></li>
 <li>
 	<span class="opener active">Research</span>
-	* [Augmentarium](https://augmentarium.umd.edu)
-    * [GVIL](https://cs.umd.edu/gvil)
-    * [MBRC](http://mbrc.umd.edu)
+	<ul>
+		<li><a href="https://augmentarium.umd.edu" target="_blank">Augmentarium</a></li>
+		<li><a href="https://cs.umd.edu/gvil" target="_blank">GVIL</a></li>
+		<li><a href="http://mbrc.umd.edu" target="_blank">MBRC</a></li>
+	</ul>
 </li>
 
-* [Publications](publications.html)
-* [Research Group](group.html)
-* [Activities](activities.html)
-* [Media](media.html)
-
+<!--<li><a href="http://www.cs.umd.edu/gvil/publications.shtml" target="_blank">Publications</a></li>-->
+<li><a href="publications.html">Publications</a></li>
+<li><a href="group.html">Research Group</a></li>
+<!--<li><a href="http://www.cs.umd.edu/projects/gvil/members.shtml" target="_blank">Students</a></li>-->
+<li><a href="activities.html">Activities</a></li>
+<li><a href="media.html">Media</a></li>
 </ul>
