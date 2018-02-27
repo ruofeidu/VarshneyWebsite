@@ -27,6 +27,10 @@ def read_str(file_name):
 
 def read_html(file_name):
     s = read_str(file_name + '.html')
+    while re_markdown.search(s):
+        key = re_markdown.search(s).groups()[0]
+        print("%s\t<=\t%s.txt" % (file_name, key))
+        s = re.sub("<!--\s*include\s*:\s*data\/" + key + "\.txt\s*-->", md[key], s, flags=re.DOTALL)
     while re_html.search(s):
         key = re_html.search(s).groups()[0]
         print("%s\t<=\t%s.html" % (file_name, key))
@@ -134,6 +138,8 @@ def write_data_to_markdown(file_name):
     NEW_PUB = '<div class="row pub">\n'
     ROW_END = '</div>\n'
 
+    HIDDEN_CATEGORIES = ['Faculty', 'Affiliated Faculty']
+
     with open("data/%s.txt" % file_name, 'w') as f:
         f.write('[comment]: <> (This markdown file is generated from %s.json by build.py)\n' % file_name)
         if file_name == 'media':
@@ -149,6 +155,8 @@ def write_data_to_markdown(file_name):
                 if m['category'] not in categories:
                     categories.append(m['category'])
             for c in categories:
+                if c in HIDDEN_CATEGORIES:
+                    continue
                 f.write(CATEGORY % c)
                 count = 0
                 f.write(NEW_ROW)
@@ -250,8 +258,8 @@ def write_data_to_markdown(file_name):
 
 html_files = ['header', 'footer', 'contact', 'menu', 'sidebar', 'banner']
 data_files = ['media', 'students', 'papers']
-md_files = ['bio', 'nav', 'media', 'activities', 'students', 'ungrads', 'papers']
-build_files = ['index', 'media', 'activities', 'students', 'publications']
+md_files = ['bio', 'nav', 'menu', 'media', 'activities', 'students', 'ungrads', 'papers']
+build_files = ['index', 'media', 'activities', 'group', 'publications']
 
 # First, parse Json Data and write to Markdown files
 for f in data_files:
@@ -262,10 +270,10 @@ for f in data_files:
     write_data_to_markdown(f)
 
 # Next, read and parse HTML and MARKDOWN file for including
-for f in html_files:
-    html[f] = read_html(f)
 for f in md_files:
     md[f] = read_markdown(f)
+for f in html_files:
+    html[f] = read_html(f)
 
 # Finally, generate combined files
 for f in build_files:

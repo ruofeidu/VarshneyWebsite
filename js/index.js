@@ -7,6 +7,8 @@ function showPhone() {
 }
 
 $( document ).ready(function() {
+    $('a[href^="http://"], a[href^="https://"]').attr('target','_blank');
+
 	$("#vemail").on({ 'touchstart' : function() {
 		showEmail();
 	} });
@@ -20,4 +22,3 @@ $( document ).ready(function() {
 		showPhone();
 	});
 });
-

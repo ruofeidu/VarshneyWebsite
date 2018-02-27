@@ -26,9 +26,9 @@
 	</h4>
 </div>
 <div class="3u 12u$(medium) center"><span class="image fit">
-	<a href="students.html" target="_blank">
-		<img src="images/students.jpg" alt="Photo of Students" class="face"/></a></span><h4 class="center">
-	<a href="students.html" target="_blank" class="name">Students</a></h4>
+	<a href="group.html" target="_blank">
+		<img src="images/students.jpg" alt="Photo of Research Group" class="face"/></a></span><h4 class="center">
+	<a href="group.html" target="_blank" class="name">Research Group</a></h4>
 </div>
 <div class="3u 12u$(medium) center"><span class="image fit">
 	<a href="activities.html" target="_blank">
