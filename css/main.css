@@ -102,7 +102,7 @@ img.flip {
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 720px) {
+@media screen and (orientation: portrait) and (max-width: 500px) {
     .downloads {
         position: relative;
         bottom: auto;

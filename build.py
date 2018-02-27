@@ -230,7 +230,7 @@ def write_data_to_markdown(file_name):
                             m['author'] += 'and '
                     a = author.strip()
                     if a in people:
-                        m['author'] += '<a href="%s" target="_blank">%s</a>' % (people[a]['url'], a)
+                        m['author'] += '<a href="%s">%s</a>' % (people[a]['url'], a)
                     else:
                         m['author'] += a
                 if m['keywords']:
