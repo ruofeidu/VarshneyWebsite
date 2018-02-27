@@ -19,26 +19,26 @@
 
 <p><div class="row">
 <div class="3u 12u$(medium) center"><span class="image fit">
-	<a href="publications.html">
+	<a href="publications.html" target="_blank">
 		<img src="images/publications.jpg" alt="Photo of Publications" class="face"/></a></span>
 	<h4 class="center">
-		<a href="publications.html" class="name">Publications</a>
+		<a href="publications.html" target="_blank" class="name">Publications</a>
 	</h4>
 </div>
 <div class="3u 12u$(medium) center"><span class="image fit">
-	<a href="students.html">
+	<a href="students.html" target="_blank">
 		<img src="images/students.jpg" alt="Photo of Students" class="face"/></a></span><h4 class="center">
-	<a href="students.html"  class="name">Students</a></h4>
+	<a href="students.html" target="_blank" class="name">Students</a></h4>
 </div>
 <div class="3u 12u$(medium) center"><span class="image fit">
-	<a href="activities.html">
+	<a href="activities.html" target="_blank">
 		<img src="images/activities.jpg" alt="Photo of Activities" class="face"/></a></span><h4 class="center">
-	<a href="activities.html" class="name">Activities</a></h4>
+	<a href="activities.html" target="_blank" class="name">Activities</a></h4>
 </div>
 <div class="3u 12u$(medium) center"><span class="image fit">
-	<a href="media.html">
+	<a href="media.html" target="_blank">
 		<img src="images/media.jpg" alt="Photo of Media" class="face"/></a></span><h4 class="center">
-	<a href="media.html" class="name">Media</a></h4>
+	<a href="media.html" target="_blank" class="name">Media</a></h4>
 </div>
 </div>
 </section>
