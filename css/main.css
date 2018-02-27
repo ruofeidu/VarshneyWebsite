@@ -86,6 +86,20 @@ img.flip {
     margin: 0 0 1.5em 0;
 }
 
+@media screen and (orientation: portrait) {
+    .downloads {
+        position: relative;
+        bottom: auto;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 480px) {
+    .downloads {
+        position: relative;
+        bottom: auto;
+    }
+}
+
 .pub-pic:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor:pointer;

@@ -1,6 +1,17 @@
 # Dr. Varshney Website
 * Written in Python + Markdown + HTML
 * Temporary site are located at http://www.cs.umd.edu/gvil/varshney/
+
+## Quick Edit
+* First, fork your own branch of this repository
+* Then edit data/students.json and data/papers.json
+* (optional) Run:
+```bash
+python build.py
+```
+* Send a pull request to me
+* DONE!
+
 ## Students
 * All students are structured as JSON objects now so it's easier to add new people or hide people
 * For example:
@@ -19,6 +30,7 @@
     "year": 2013
 }
 ```
+
 ## Publications
 * Every paper is structured as JSON objects now, so it's easier to generate BibTeX, change visualization, and add filters in the future:
 ```json
