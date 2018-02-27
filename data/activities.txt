@@ -1,8 +1,8 @@
 <header>
 <h2>Selected Professional Activities</h2>
 </header>
-* Board of Directors, IEEE Visualization and Graphics Technical Committee, 2012 – present.
 * Steering Committee, IEEE Visualization Conference, 2006 – present.
+* Board of Directors, IEEE Visualization and Graphics Technical Committee, 2012 – 2015.
 * Chair, IEEE Visualization and Graphics Technical Committee, 2008 – 2012.
 * Papers Co-Chair, ACM Symposium on Interactive 3D Graphics and Games, 2011.
 * General Co-Chair, ACM Symposium on Interactive 3D Graphics and Games, 2010.
