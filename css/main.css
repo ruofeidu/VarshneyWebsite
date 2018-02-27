@@ -86,14 +86,23 @@ img.flip {
     margin: 0 0 1.5em 0;
 }
 
+@media screen and (orientation: landscape) and (max-width: 720px) {
+    .downloads {
+        position: relative;
+        bottom: auto;
+        margin: 0.5em 0 1.5em 0;
+    }
+}
+
 @media screen and (orientation: portrait) {
     .downloads {
         position: relative;
         bottom: auto;
+        margin: 0.5em 0 1.5em 0;
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 480px) {
+@media screen and (orientation: portrait) and (max-width: 720px) {
     .downloads {
         position: relative;
         bottom: auto;

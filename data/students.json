@@ -448,7 +448,7 @@
         "title": "M.S.",
         "category": "Alumni",
         "time": "",
-        "visible": true,
+        "visible": false,
         "tags": "GVIL,Augmentarium",
         "department": "Computer Science",
         "current": "University of Maryland",

@@ -82,16 +82,26 @@ def write_bib(b):
     if 'http' in filename:
         return
     print(filename)
+    TAB = "&nbsp&nbsp&nbsp&nbsp"
 
     with open(filename, 'w') as f:
         f.write('@%s{%s,<br/>\n' % (b['type'], b['bibname']))
-        f.write('&nbsp&nbsptitle = "%s",<br/>\n' % b['title'])
-        f.write('&nbsp&nbspauthor = "%s",<br/>\n' % b['author'])
-        f.write('&nbsp&nbsp%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
-        f.write('&nbsp&nbspyear = "%s",<br/>\n' % b['year'])
+        f.write(TAB + 'title = "%s",<br/>\n' % b['title'])
+        f.write(TAB + 'author = "%s",<br/>\n' % b['author'])
+        f.write(TAB + '%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
+        f.write(TAB + 'year = "%s",<br/>\n' % b['year'])
+        if b['month']:
+            f.write(TAB + 'month = "%s",<br/>\n' % b['month'])
+        if b['day']:
+            f.write(TAB + 'day = "%s",<br/>\n' % b['day'])
         if b['type'] == 'article':
-            f.write('&nbsp&nbspvolume = "%s",<br/>\n' % b['volume'])
-        f.write('&nbsp&nbsppages = "%s"<br/>\n' % b['pages'])
+            f.write(TAB + 'volume = "%s",<br/>\n' % b['volume'])
+            f.write(TAB + 'number = "%s",<br/>\n' % b['number'])
+        if b['editor']:
+            f.write(TAB + 'editor = "%s",<br/>\n' % b['editor'])
+        if b['location']:
+            f.write(TAB + 'location = "%s",<br/>\n' % b['location'])
+        f.write(TAB + 'pages = "%s"<br/>\n' % b['pages'])
         f.write('}<br/>\n')
 
     filename = 'bib/' + b['bib'] + '.apa'
@@ -102,7 +112,9 @@ def write_bib(b):
         f.write(' (%s).<br/> ' % (b['year']))
         f.write('%s.' % b['title'])
         f.write(' <br/><i>%s</i>' % b['booktitle'])
-        f.write(', %s' % b['pages'].replace('--', '-'))
+        if b['type'] == 'article':
+            f.write(', %s(%s)' % (b['volume'], b['number']))
+        f.write(', %s' % b['pages'].replace('--', '-').replace(' ', ''))
 
 
 def write_data_to_markdown(file_name):

@@ -39,12 +39,11 @@
 </div>
 <div class="row">
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.umiacs.umd.edu/~yalcin" target="_blank"><img src="photos/AdilYalcin.jpg" alt="M. Adil Yalcin's photo" class="face"/></a></span><h4 class="center"><a href="http://www.umiacs.umd.edu/~yalcin" target="_blank" class="name">M. Adil Yalcin</a></h4></div>
-<div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.umiacs.umd.edu/~phi/" target="_blank"><img src="photos/PhilipYang.png" alt="Philip Yang's photo" class="face"/></a></span><h4 class="center"><a href="http://www.umiacs.umd.edu/~phi/" target="_blank" class="name">Philip Yang</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.linkedin.com/in/patricia-sazama-44938271" target="_blank"><img src="photos/PatriciaSazama.jpg" alt="Patricia Sazama's photo" class="face"/></a></span><h4 class="center"><a href="http://www.linkedin.com/in/patricia-sazama-44938271" target="_blank" class="name">Patricia Sazama</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://cs.umd.edu/~somay/" target="_blank"><img src="photos/SomayJain.jpg" alt="Somay Jain's photo" class="face"/></a></span><h4 class="center"><a href="http://cs.umd.edu/~somay/" target="_blank" class="name">Somay Jain</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://mukulagarwal.com/" target="_blank"><img src="photos/MukulAgarwal.jpg" alt="Mukul Agarwal's photo" class="face"/></a></span><h4 class="center"><a href="http://mukulagarwal.com/" target="_blank" class="name">Mukul Agarwal</a></h4></div>
+<div class="2u 12u$(medium) center"><span class="image fit"><a href="https://www.cs.umd.edu/people/gkramida" target="_blank"><img src="photos/GregoryKramida.png" alt="Gregory Kramida's photo" class="face"/></a></span><h4 class="center"><a href="https://www.cs.umd.edu/people/gkramida" target="_blank" class="name">Gregory Kramida</a></h4></div>
 </div>
 <div class="row">
-<div class="2u 12u$(medium) center"><span class="image fit"><a href="https://www.cs.umd.edu/people/gkramida" target="_blank"><img src="photos/GregoryKramida.png" alt="Gregory Kramida's photo" class="face"/></a></span><h4 class="center"><a href="https://www.cs.umd.edu/people/gkramida" target="_blank" class="name">Gregory Kramida</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.cs.umd.edu/~cheng" target="_blank"><img src="photos/HsuehChienCheng.jpg" alt="Hsueh-Chien Cheng's photo" class="face"/></a></span><h4 class="center"><a href="http://www.cs.umd.edu/~cheng" target="_blank" class="name">Hsueh-Chien Cheng</a></h4></div>
 </div>
