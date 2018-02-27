@@ -101,6 +101,8 @@ def write_bib(b):
             f.write(TAB + 'editor = "%s",<br/>\n' % b['editor'])
         if b['location']:
             f.write(TAB + 'location = "%s",<br/>\n' % b['location'])
+        if b['publisher']:
+            f.write(TAB + 'publisher = "%s",<br/>\n' % b['publisher'])
         f.write(TAB + 'pages = "%s"<br/>\n' % b['pages'])
         f.write('}<br/>\n')
 

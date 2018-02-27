@@ -6,6 +6,12 @@ He received a B. Tech. in Computer Science from the [Indian Institute of Technol
 and a M.S. and Ph.D. in Computer Science from the
 [University of North Carolina at Chapel Hill](https://www.unc.edu).
 
+Research Interests:
+
+* Augmented and Virtual Reality
+* 3D Computer Graphics and Scientific Visualization
+* Molecular Graphics, High-Performance Computing, Computational Geometry
+
 Varshney's research focus is on exploring the applications of
 high-performance computing and visualization in engineering, science, and medicine.
 He has worked on a number of research areas including visual saliency,
