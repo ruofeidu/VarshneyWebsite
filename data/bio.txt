@@ -2,11 +2,15 @@ Amitabh Varshney is
 Dean of the [College of Computer, Mathematical and Natural Sciences](https://cmns.umd.edu),
 and
 Professor of [Computer Science](https://cs.umd.edu) at the [University of Maryland at College Park](https://www.umd.edu).
-He received a B. Tech. in Computer Science from the [Indian Institute of Technology, Delhi](http://www.iitd.ac.in) in 1989,
+He received a B. Tech. in Computer Science from the [Indian Institute of Technology, Delhi](http://www.iitd.ac.in),
 and a M.S. and Ph.D. in Computer Science from the
-[University of North Carolina at Chapel Hill](https://www.unc.edu) in 1991 and 1994.
-From 1994 to 2000, he was Assistant Professor of Computer Science at the
-[State University of New York at Stony Brook](http://www.stonybrook.edu/).
+[University of North Carolina at Chapel Hill](https://www.unc.edu).
+
+Research Interests:
+
+* Augmented and Virtual Reality
+* 3D Computer Graphics and Scientific Visualization
+* Molecular Graphics, High-Performance Computing, Computational Geometry
 
 Varshney's research focus is on exploring the applications of
 high-performance computing and visualization in engineering, science, and medicine.

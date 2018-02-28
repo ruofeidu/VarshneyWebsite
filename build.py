@@ -82,16 +82,35 @@ def write_bib(b):
     if 'http' in filename:
         return
     print(filename)
+    TAB = "&nbsp&nbsp&nbsp&nbsp"
 
     with open(filename, 'w') as f:
         f.write('@%s{%s,<br/>\n' % (b['type'], b['bibname']))
-        f.write('&nbsp&nbsptitle = "%s",<br/>\n' % b['title'])
-        f.write('&nbsp&nbspauthor = "%s",<br/>\n' % b['author'])
-        f.write('&nbsp&nbsp%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
-        f.write('&nbsp&nbspyear = "%s",<br/>\n' % b['year'])
+        f.write(TAB + 'title = "%s",<br/>\n' % b['title'])
+        author_list = b['author']
+        if 'authorb' in b:
+            author_list = b['authorb']
+        if 'bibauthor' in b:
+            author_list = b['bibauthor']
+        f.write(TAB + 'author = "%s",<br/>\n' % author_list)
+        f.write(TAB + '%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
+        f.write(TAB + 'year = "%s",<br/>\n' % b['year'])
+        if b['month']:
+            f.write(TAB + 'month = "%s",<br/>\n' % b['month'])
+        if b['day']:
+            f.write(TAB + 'day = "%s",<br/>\n' % b['day'])
         if b['type'] == 'article':
-            f.write('&nbsp&nbspvolume = "%s",<br/>\n' % b['volume'])
-        f.write('&nbsp&nbsppages = "%s"<br/>\n' % b['pages'])
+            f.write(TAB + 'volume = "%s",<br/>\n' % b['volume'])
+            f.write(TAB + 'number = "%s",<br/>\n' % b['number'])
+        if b['editor']:
+            f.write(TAB + 'editor = "%s",<br/>\n' % b['editor'])
+        if b['location']:
+            f.write(TAB + 'location = "%s",<br/>\n' % b['location'])
+        if b['publisher']:
+            f.write(TAB + 'publisher = "%s",<br/>\n' % b['publisher'])
+        if b['keywords']:
+            f.write(TAB + 'keywords = "%s",<br/>\n' % b['keywords'])
+        f.write(TAB + 'pages = "%s"<br/>\n' % b['pages'])
         f.write('}<br/>\n')
 
     filename = 'bib/' + b['bib'] + '.apa'
@@ -102,11 +121,13 @@ def write_bib(b):
         f.write(' (%s).<br/> ' % (b['year']))
         f.write('%s.' % b['title'])
         f.write(' <br/><i>%s</i>' % b['booktitle'])
-        f.write(', %s' % b['pages'].replace('--', '-'))
+        if b['type'] == 'article':
+            f.write(', %s(%s)' % (b['volume'], b['number']))
+        f.write(', %s' % b['pages'].replace('--', '-').replace(' ', ''))
 
 
 def write_data_to_markdown(file_name):
-    LINE_MEDIA = '* %s, [%s](%s), %s%s %s, %s.\n'
+    LINE_MEDIA = '* *%s*, **[%s](%s)**, %s%s %s, %s.\n'
     LINE_STUDENTS = '<div class="2u 12u$(medium) center"><span class="image fit">' \
                     '<a href="%s" target="_blank"><img src="photos/%s" alt="%s" class="face"/></a></span>' \
                     '<h4 class="center"><a href="%s" target="_blank" class="name">%s</a></h4></div>\n'
@@ -138,7 +159,7 @@ def write_data_to_markdown(file_name):
     NEW_PUB = '<div class="row pub">\n'
     ROW_END = '</div>\n'
 
-    HIDDEN_CATEGORIES = ['Faculty', 'Affiliated Faculty']
+    HIDDEN_CATEGORIES = ['Faculty', 'Affiliated Faculty', 'Collaborators']
 
     with open("data/%s.txt" % file_name, 'w') as f:
         f.write('[comment]: <> (This markdown file is generated from %s.json by build.py)\n' % file_name)
@@ -203,8 +224,6 @@ def write_data_to_markdown(file_name):
                 if not m['published']:
                     m['booktitle'] = 'To Appear In ' + m['booktitle']
                     m['url'] = ''
-                if m['award']:
-                    m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
                 if m['doi']:
                     m['doi'] = ' <a href="https://doi.org/%s" target="_blank">[doi]</a>' % m['doi']
                 m['author'] = ''
@@ -218,12 +237,12 @@ def write_data_to_markdown(file_name):
                             m['author'] += 'and '
                     a = author.strip()
                     if a in people:
-                        m['author'] += '<a href="%s" target="_blank">%s</a>' % (people[a]['url'], a)
+                        m['author'] += '<a href="%s">%s</a>' % (people[a]['url'], a)
                     else:
                         m['author'] += a
                 if m['keywords']:
                     m['keywords'] = "keywords: %s" % m['keywords']
-                if m['published'] and m['type'] == 'article':
+                if m['published']:
                     pages = m['pages'].replace('--', ',')
                     pages = pages.replace('-', ',')
                     pages = pages.split(',')
@@ -232,13 +251,21 @@ def write_data_to_markdown(file_name):
                     if len(pages) == 2:
                         m['pstart'] = pages[0].strip()
                         m['pend'] = pages[1].strip()
-                        m['booktitle'] += "<br/>Vol. %s, No. %s, pp. %s-%s." % (
-                            m['volume'], m['number'], m['pstart'], m['pend'])
+                    if m['type'] == 'article':
+                        if len(pages) == 2:
+                            m['booktitle'] += ". Vol. %s, No. %s, pp. %s-%s" % (
+                                m['volume'], m['number'], m['pstart'], m['pend'])
+                        else:
+                            m['booktitle'] += ". Vol. %s, No. %s." % (m['volume'], m['number'])
                     else:
-                        m['booktitle'] += "<br/>Vol. %s, No. %s." % (m['volume'], m['number'])
+                        if len(pages) == 2:
+                            m['booktitle'] += ". pp. %s-%s" % (m['pstart'], m['pend'])
+                m['booktitle'] += ', %s.' % m['year']
+                if m['award']:
+                    m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
 
             for y in sorted(years, reverse=True):
-                f.write(YEAR % y)
+                # f.write(YEAR % y)
                 count = 0
                 for m in data['papers']:
                     if m['year'] == y and m['visible']:

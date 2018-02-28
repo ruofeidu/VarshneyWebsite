@@ -1,3 +1,8 @@
+
+body {
+    overflow-x: hidden;
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -83,30 +88,51 @@ img.flip {
     position:absolute;
     bottom: 0;
     min-width: 100vw;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 0.5em 0;
+}
+
+@media screen and (orientation: landscape) and (max-width: 813px) {
+    .downloads {
+        position: relative;
+        bottom: auto;
+        margin: 0.5em 0 1.5em 0;
+    }
 }
 
 @media screen and (orientation: portrait) {
     .downloads {
-        position: relative;
-        bottom: auto;
+        margin: 0.5em 0 1.5em 0;
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 480px) {
+@media screen and (orientation: portrait) and (max-width: 813px) {
     .downloads {
         position: relative;
         bottom: auto;
     }
 }
+
+.pub-pic {
+    margin: 0.5em 0;
+}
+
+/*
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+    .pub-pic {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+*/
 
 .pub-pic:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor:pointer;
 }
 
-.pub-info{
-    margin: 0;
+.pub-info {
+    margin: 0.5em 0;
+    font-size: 90%;
 }
 
 .pub-info>p{
@@ -132,4 +158,12 @@ img.flip {
 .award {
     color: #f56a6a;
     font-weight: bold;
+}
+
+#vemail {
+	cursor: pointer;
+}
+
+#vphone {
+	cursor: pointer;
 }
