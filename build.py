@@ -253,18 +253,19 @@ def write_data_to_markdown(file_name):
                         m['pend'] = pages[1].strip()
                     if m['type'] == 'article':
                         if len(pages) == 2:
-                            m['booktitle'] += ". Vol. %s, No. %s, pp. %s-%s." % (
+                            m['booktitle'] += ". Vol. %s, No. %s, pp. %s-%s" % (
                                 m['volume'], m['number'], m['pstart'], m['pend'])
                         else:
                             m['booktitle'] += ". Vol. %s, No. %s." % (m['volume'], m['number'])
                     else:
                         if len(pages) == 2:
-                            m['booktitle'] += ". pp. %s-%s." % (m['pstart'], m['pend'])
+                            m['booktitle'] += ". pp. %s-%s" % (m['pstart'], m['pend'])
                 if m['award']:
                     m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
+                m['booktitle'] += ', %s.' % m['year']
 
             for y in sorted(years, reverse=True):
-                f.write(YEAR % y)
+                # f.write(YEAR % y)
                 count = 0
                 for m in data['papers']:
                     if m['year'] == y and m['visible']:
