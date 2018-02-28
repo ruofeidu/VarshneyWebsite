@@ -260,9 +260,9 @@ def write_data_to_markdown(file_name):
                     else:
                         if len(pages) == 2:
                             m['booktitle'] += ". pp. %s-%s" % (m['pstart'], m['pend'])
+                m['booktitle'] += ', %s.' % m['year']
                 if m['award']:
                     m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
-                m['booktitle'] += ', %s.' % m['year']
 
             for y in sorted(years, reverse=True):
                 # f.write(YEAR % y)
