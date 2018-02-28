@@ -159,7 +159,7 @@ def write_data_to_markdown(file_name):
     NEW_PUB = '<div class="row pub">\n'
     ROW_END = '</div>\n'
 
-    HIDDEN_CATEGORIES = ['Faculty', 'Affiliated Faculty']
+    HIDDEN_CATEGORIES = ['Faculty', 'Affiliated Faculty', 'Collaborators']
 
     with open("data/%s.txt" % file_name, 'w') as f:
         f.write('[comment]: <> (This markdown file is generated from %s.json by build.py)\n' % file_name)
