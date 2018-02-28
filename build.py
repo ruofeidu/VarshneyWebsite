@@ -127,7 +127,7 @@ def write_bib(b):
 
 
 def write_data_to_markdown(file_name):
-    LINE_MEDIA = '* %s, [%s](%s), %s%s %s, %s.\n'
+    LINE_MEDIA = '* *%s*, **[%s](%s)**, %s%s %s, %s.\n'
     LINE_STUDENTS = '<div class="2u 12u$(medium) center"><span class="image fit">' \
                     '<a href="%s" target="_blank"><img src="photos/%s" alt="%s" class="face"/></a></span>' \
                     '<h4 class="center"><a href="%s" target="_blank" class="name">%s</a></h4></div>\n'
