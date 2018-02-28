@@ -1,4 +1,7 @@
 [comment]: <> (This markdown file is generated from students.json by build.py)
+### Collaborators
+<div class="row">
+</div>
 ### Assistant Research Scientists
 <div class="row">
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="https://www.umiacs.umd.edu/people/acardone" target="_blank"><img src="photos/AntonioCardone.jpg" alt="Antonio Cardone's photo" class="face"/></a></span><h4 class="center"><a href="https://www.umiacs.umd.edu/people/acardone" target="_blank" class="name">Antonio Cardone</a></h4></div>

@@ -217,8 +217,6 @@ def write_data_to_markdown(file_name):
                 if not m['published']:
                     m['booktitle'] = 'To Appear In ' + m['booktitle']
                     m['url'] = ''
-                if m['award']:
-                    m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
                 if m['doi']:
                     m['doi'] = ' <a href="https://doi.org/%s" target="_blank">[doi]</a>' % m['doi']
                 m['author'] = ''
@@ -237,7 +235,7 @@ def write_data_to_markdown(file_name):
                         m['author'] += a
                 if m['keywords']:
                     m['keywords'] = "keywords: %s" % m['keywords']
-                if m['published'] and m['type'] == 'article':
+                if m['published']:
                     pages = m['pages'].replace('--', ',')
                     pages = pages.replace('-', ',')
                     pages = pages.split(',')
@@ -246,10 +244,17 @@ def write_data_to_markdown(file_name):
                     if len(pages) == 2:
                         m['pstart'] = pages[0].strip()
                         m['pend'] = pages[1].strip()
-                        m['booktitle'] += "<br/>Vol. %s, No. %s, pp. %s-%s." % (
-                            m['volume'], m['number'], m['pstart'], m['pend'])
+                    if m['type'] == 'article':
+                        if len(pages) == 2:
+                            m['booktitle'] += ". Vol. %s, No. %s, pp. %s-%s." % (
+                                m['volume'], m['number'], m['pstart'], m['pend'])
+                        else:
+                            m['booktitle'] += ". Vol. %s, No. %s." % (m['volume'], m['number'])
                     else:
-                        m['booktitle'] += "<br/>Vol. %s, No. %s." % (m['volume'], m['number'])
+                        if len(pages) == 2:
+                            m['booktitle'] += ". pp. %s-%s." % (m['pstart'], m['pend'])
+                if m['award']:
+                    m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
 
             for y in sorted(years, reverse=True):
                 f.write(YEAR % y)

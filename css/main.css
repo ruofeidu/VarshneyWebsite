@@ -83,7 +83,7 @@ img.flip {
     position:absolute;
     bottom: 0;
     min-width: 100vw;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 0.5em 0;
 }
 
 @media screen and (orientation: landscape) and (max-width: 720px) {
@@ -109,13 +109,27 @@ img.flip {
     }
 }
 
+.pub-pic {
+    margin: 0.5em 0;
+}
+
+/*
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+    .pub-pic {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+*/
+
 .pub-pic:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor:pointer;
 }
 
-.pub-info{
-    margin: 0;
+.pub-info {
+    margin: 0.5em 0;
+    font-size: 90%;
 }
 
 .pub-info>p{
