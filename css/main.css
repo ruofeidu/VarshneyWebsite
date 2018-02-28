@@ -1,3 +1,8 @@
+
+body {
+    overflow-x: hidden;
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -86,7 +91,7 @@ img.flip {
     margin: 0 0 0.5em 0;
 }
 
-@media screen and (orientation: landscape) and (max-width: 720px) {
+@media screen and (orientation: landscape) and (max-width: 813px) {
     .downloads {
         position: relative;
         bottom: auto;
@@ -96,13 +101,11 @@ img.flip {
 
 @media screen and (orientation: portrait) {
     .downloads {
-        position: relative;
-        bottom: auto;
         margin: 0.5em 0 1.5em 0;
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 500px) {
+@media screen and (orientation: portrait) and (max-width: 813px) {
     .downloads {
         position: relative;
         bottom: auto;
@@ -155,4 +158,12 @@ img.flip {
 .award {
     color: #f56a6a;
     font-weight: bold;
+}
+
+#vemail {
+	cursor: pointer;
+}
+
+#vphone {
+	cursor: pointer;
 }

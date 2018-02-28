@@ -87,7 +87,12 @@ def write_bib(b):
     with open(filename, 'w') as f:
         f.write('@%s{%s,<br/>\n' % (b['type'], b['bibname']))
         f.write(TAB + 'title = "%s",<br/>\n' % b['title'])
-        f.write(TAB + 'author = "%s",<br/>\n' % b['author'])
+        author_list = b['author']
+        if 'authorb' in b:
+            author_list = b['authorb']
+        if 'bibauthor' in b:
+            author_list = b['bibauthor']
+        f.write(TAB + 'author = "%s",<br/>\n' % author_list)
         f.write(TAB + '%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
         f.write(TAB + 'year = "%s",<br/>\n' % b['year'])
         if b['month']:
@@ -103,6 +108,8 @@ def write_bib(b):
             f.write(TAB + 'location = "%s",<br/>\n' % b['location'])
         if b['publisher']:
             f.write(TAB + 'publisher = "%s",<br/>\n' % b['publisher'])
+        if b['keywords']:
+            f.write(TAB + 'keywords = "%s",<br/>\n' % b['keywords'])
         f.write(TAB + 'pages = "%s"<br/>\n' % b['pages'])
         f.write('}<br/>\n')
 
