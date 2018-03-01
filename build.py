@@ -242,6 +242,7 @@ def write_data_to_markdown(file_name):
                         m['author'] += a
                 if m['keywords']:
                     m['keywords'] = "keywords: %s" % m['keywords']
+                m['keywords'] += '<br/><br/>'
                 if m['published']:
                     pages = m['pages'].replace('--', ',')
                     pages = pages.replace('-', ',')
