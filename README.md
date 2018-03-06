@@ -1,15 +1,40 @@
 # Dr. Varshney Website
 * Written in Python + Markdown + HTML
-* Temporary site are located at http://www.cs.umd.edu/gvil/varshney/
+* Deployed site is located at http://www.cs.umd.edu/~varshney
 
-## Quick Edit
-* First, fork your own branch of this repository
+## Short Edit
+* Just clone the repo, make tiny edits, and run:
+```bash
+python build.py
+```
+to rebuild all html files
+* Commit and push
+```bash
+git add -A
+git commit -m "documentation of your modification"
+git push
+```
+* DONE!
+
+## Long Edit
+* First, clone this repo, and create your own branch of this:
+```bash
+git clone git@github.com:AugmentariumLab/VarshneyWebsite.git
+git branch feature-your-branch-name
+```
 * Then edit data/students.json and data/papers.json
+* You may want to put new teaser images and paper preprints under teaser/ and papers/
 * (optional) Run:
 ```bash
 python build.py
 ```
-* Send a pull request to me
+* Commit and push
+```bash
+git add -A
+git commit -m "documentation of your modification"
+git push
+```
+* Send a pull request to the main branch
 * DONE!
 
 ## Students
