@@ -92,25 +92,25 @@ def write_bib(b):
             author_list = b['authorb']
         if 'bibauthor' in b:
             author_list = b['bibauthor']
-        f.write(TAB + 'author = "%s",<br/>\n' % author_list)
-        f.write(TAB + '%s = "%s",<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
-        f.write(TAB + 'year = "%s",<br/>\n' % b['year'])
+        f.write(TAB + 'author = {%s},<br/>\n' % author_list)
+        f.write(TAB + '%s = {%s},<br/>\n' % ('journal' if b['type'] == 'article' else 'booktitle', b['booktitle']))
+        f.write(TAB + 'year = {%s},<br/>\n' % b['year'])
         if b['month']:
-            f.write(TAB + 'month = "%s",<br/>\n' % b['month'])
+            f.write(TAB + 'month = {%s},<br/>\n' % b['month'])
         if b['day']:
-            f.write(TAB + 'day = "%s",<br/>\n' % b['day'])
+            f.write(TAB + 'day = {%s},<br/>\n' % b['day'])
         if b['type'] == 'article':
-            f.write(TAB + 'volume = "%s",<br/>\n' % b['volume'])
-            f.write(TAB + 'number = "%s",<br/>\n' % b['number'])
+            f.write(TAB + 'volume = {%s},<br/>\n' % b['volume'])
+            f.write(TAB + 'number = {%s},<br/>\n' % b['number'])
         if b['editor']:
-            f.write(TAB + 'editor = "%s",<br/>\n' % b['editor'])
+            f.write(TAB + 'editor = {%s},<br/>\n' % b['editor'])
         if b['location']:
-            f.write(TAB + 'location = "%s",<br/>\n' % b['location'])
+            f.write(TAB + 'location = {%s},<br/>\n' % b['location'])
         if b['publisher']:
-            f.write(TAB + 'publisher = "%s",<br/>\n' % b['publisher'])
+            f.write(TAB + 'publisher = {%s},<br/>\n' % b['publisher'])
         if b['keywords']:
-            f.write(TAB + 'keywords = "%s",<br/>\n' % b['keywords'])
-        f.write(TAB + 'pages = "%s"<br/>\n' % b['pages'])
+            f.write(TAB + 'keywords = {%s},<br/>\n' % b['keywords'])
+        f.write(TAB + 'pages = {%s}<br/>\n' % b['pages'])
         f.write('}<br/>\n')
 
     filename = 'bib/' + b['bib'] + '.apa'
