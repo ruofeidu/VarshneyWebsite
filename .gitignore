@@ -4,8 +4,7 @@ __pycache__/
 images/
 *.py[cod]
 *$py.class
-*.bib
-*.apa
+*.zip
 *.psd
 _backup
 bib/

@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
 /*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Personal licensed purchased from pixelarity.com
 */
 
 /* Reset */
@@ -3480,7 +3478,7 @@
 		-webkit-flex-shrink: 1;
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
-		width: 100%;
+		width: 50%;
 	}
 
 		#main > .inner {
@@ -3883,6 +3881,7 @@
 			display: block;
 			margin: 0 0 2em 4em;
 			width: 40%;
+			max-height: 90vh;
 		}
 
 			#banner .image img {
@@ -3933,12 +3932,12 @@
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
 					margin: 0 0 4em 0;
-					height: 50vh;
-					max-height: 70vh;
-					min-height: 18em;
-					width: 50vh;
+					height: 45vh;
+					max-height: 50vh;
+					min-height: 30vh;
+					max-width: 90vw;
+					width: 70vw;
 				}
-
 		}
 
 		@media screen and (orientation: portrait) and (max-width: 480px) {
