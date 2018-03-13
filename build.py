@@ -139,7 +139,7 @@ def write_data_to_markdown(file_name):
                   '<div class="9u 12u$(medium) pub-info"><h4><a href="%s" target="_blank">%s</a></h4>' \
                   '<p class="authors">%s</p>' \
                   '<p class="booktitle">%s</p>' \
-                  '<p class="keywords">%s</p>' \
+                  '<p class="keywords">%s</p><br/><br/>' \
                   '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s | ' \
                   'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                   '</p></div>'
@@ -148,7 +148,7 @@ def write_data_to_markdown(file_name):
                        '<div class="9u 12u$(medium) pub-info"><h4>%s</h4>' \
                        '<p class="authors">%s</p>' \
                        '<p class="booktitle">%s</p>' \
-                       '<p class="keywords">%s</p>' \
+                       '<p class="keywords">%s</p><br/><br/>' \
                        '<div class="downloads">Download: [pdf] %s%s%s | ' \
                        'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                        '</p></div>'
