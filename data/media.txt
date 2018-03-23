@@ -24,3 +24,4 @@
 * *Communications of the ACM*, **[VR Trauma Surgery 101: Going For The Grisly](https://cacm.acm.org/news/212008-vr-trauma-surgery-101-going-for-the-grisly/fulltext)**, January 10, 2017.
 * *University of Maryland Communications*, **[An Augmented View](https://youtu.be/yDTjCYtr_4Y)**, (Video) October 12, 2016.
 * *CNN Money*, **[How Facebook's AI Could Change Your Life (or At Least Help You Eat Better)](http://money.cnn.com/2016/08/25/technology/facebook-ai-augmented-reality/)**, August 25, 2016.
+* *Harvard Business Review*, **[How Augmented Reality Will Make Surgery Safer](https://hbr.org/2018/03/how-augmented-reality-will-make-surgery-safer)**, March 20, 2018.
