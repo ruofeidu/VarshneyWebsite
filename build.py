@@ -11,6 +11,7 @@ re_html = re.compile("<!--\s*include\s*:\s*(.+)\.html\s*?-->")
 
 html, md, data, people = {}, {}, {}, {}
 
+
 def remove_comments(html):
     return re.sub("(<!--.*?-->)", "", html, flags=re.DOTALL)
 
@@ -106,8 +107,12 @@ def write_bib(b):
             f.write(TAB + 'editor = {%s},<br/>\n' % b['editor'])
         if b['location']:
             f.write(TAB + 'location = {%s},<br/>\n' % b['location'])
+        elif b['address']:
+            f.write(TAB + 'location = {%s},<br/>\n' % b['address'])
         if b['publisher']:
             f.write(TAB + 'publisher = {%s},<br/>\n' % b['publisher'])
+        if b['series']:
+            f.write(TAB + 'series = {%s},<br/>\n' % b['series'])
         if b['keywords']:
             f.write(TAB + 'keywords = {%s},<br/>\n' % b['keywords'])
         f.write(TAB + 'pages = {%s}<br/>\n' % b['pages'])
@@ -139,8 +144,8 @@ def write_data_to_markdown(file_name):
                   '<div class="9u 12u$(medium) pub-info"><h4><a href="%s" target="_blank">%s</a></h4>' \
                   '<p class="authors">%s</p>' \
                   '<p class="booktitle">%s</p>' \
-                  '<p class="keywords">%s</p>' \
-                  '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s | ' \
+                  '<p class="keywords">%s</p><br/><br/>' \
+                  '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s%s | ' \
                   'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                   '</p></div>'
     LINE_UNPUBLISHED = '<div class="3u 12u$(medium)"><span class="image fit">' \
@@ -148,7 +153,7 @@ def write_data_to_markdown(file_name):
                        '<div class="9u 12u$(medium) pub-info"><h4>%s</h4>' \
                        '<p class="authors">%s</p>' \
                        '<p class="booktitle">%s</p>' \
-                       '<p class="keywords">%s</p>' \
+                       '<p class="keywords">%s</p><br/><br/>' \
                        '<div class="downloads">Download: [pdf] %s%s%s | ' \
                        'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
                        '</p></div>'
@@ -221,6 +226,10 @@ def write_data_to_markdown(file_name):
                     m['web'] = ' <a href="%s" target="blank">[web]</a>' % m['web']
                 else:
                     m['web'] = ''
+                if 'data' in m and m['data']:
+                    m['data'] = ' <a href="%s" target="blank">[data]</a>' % m['data']
+                else:
+                    m['data'] = ''
                 if not m['published']:
                     m['booktitle'] = 'To Appear In ' + m['booktitle']
                     m['url'] = ''
@@ -264,6 +273,8 @@ def write_data_to_markdown(file_name):
                 m['booktitle'] += ', %s.' % m['year']
                 if m['award']:
                     m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
+                    if 'news' in m:
+                        m['booktitle'] += ' <a href="%s"><span class="news">News</span></a>' % m['news']
 
             for y in sorted(years, reverse=True):
                 # f.write(YEAR % y)
@@ -275,7 +286,8 @@ def write_data_to_markdown(file_name):
                             f.write(LINE_PAPERS % (
                                 m['url'], m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
                                 m['keywords'],
-                                m['url'], m['doi'], m['video'], m['code'], m['slides'], m['web'], m['apa'], m['bib']))
+                                m['url'], m['doi'], m['video'], m['code'], m['slides'], m['web'], m['data'], m['apa'],
+                                m['bib']))
                         else:
                             f.write(LINE_UNPUBLISHED % (
                                 m['image'], m['title'], m['title'], m['author'], m['booktitle'],
