@@ -1,14 +1,5 @@
 [
     {
-        "publisher": "Harvard Business Review",
-        "title": "How Augmented Reality Will Make Surgery Safer",
-        "month": "March",
-        "day": "20",
-        "year": "2018",
-        "video": false,
-        "url": "https://hbr.org/2018/03/how-augmented-reality-will-make-surgery-safer"
-    },
-    {
         "publisher": "CNN Money",
         "title": "How Facebook's AI could change your life (or at least help you eat better)",
         "month": "August",
@@ -232,5 +223,14 @@
         "year": "2018",
         "video": false,
         "url": "https://www.nbcnews.com/mach/science/augmented-reality-lets-doctors-peer-inside-body-never-ncna847691"
+    },
+    {
+        "publisher": "Harvard Business Review",
+        "title": "How Augmented Reality Will Make Surgery Safer",
+        "month": "March",
+        "day": "20",
+        "year": "2018",
+        "video": false,
+        "url": "https://hbr.org/2018/03/how-augmented-reality-will-make-surgery-safer"
     }
 ]

@@ -1,4 +1,5 @@
 [comment]: <> (This markdown file is generated from media.json by build.py)
+* *Harvard Business Review*, **[How Augmented Reality Will Make Surgery Safer](https://hbr.org/2018/03/how-augmented-reality-will-make-surgery-safer)**, March 20, 2018.
 * *NBC News Mach*, **[Augmented Reality Lets Doctors Peer Inside The Body Like Never Before](https://www.nbcnews.com/mach/science/augmented-reality-lets-doctors-peer-inside-body-never-ncna847691)**, February 14, 2018.
 * *Capital News Service*, **[Police And Universities Collaborate On Reforms](http://cnsmaryland.org/baltimore-university/)**, January 17, 2018.
 * *CNN Money*, **[Why Is Everyone So Excited About Nvidia?](http://money.cnn.com/2018/01/08/technology/nvidia-ces-2018/index.html)**, January 9, 2018.
@@ -24,4 +25,3 @@
 * *Communications of the ACM*, **[VR Trauma Surgery 101: Going For The Grisly](https://cacm.acm.org/news/212008-vr-trauma-surgery-101-going-for-the-grisly/fulltext)**, January 10, 2017.
 * *University of Maryland Communications*, **[An Augmented View](https://youtu.be/yDTjCYtr_4Y)**, (Video) October 12, 2016.
 * *CNN Money*, **[How Facebook's AI Could Change Your Life (or At Least Help You Eat Better)](http://money.cnn.com/2016/08/25/technology/facebook-ai-augmented-reality/)**, August 25, 2016.
-* *Harvard Business Review*, **[How Augmented Reality Will Make Surgery Safer](https://hbr.org/2018/03/how-augmented-reality-will-make-surgery-safer)**, March 20, 2018.
