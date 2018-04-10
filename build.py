@@ -115,6 +115,8 @@ def write_bib(b):
             f.write(TAB + 'series = {%s},<br/>\n' % b['series'])
         if b['keywords']:
             f.write(TAB + 'keywords = {%s},<br/>\n' % b['keywords'])
+        if b['doi']:
+            f.write(TAB + 'doi = {%s},<br/>\n' % b['doi'])
         f.write(TAB + 'pages = {%s}<br/>\n' % b['pages'])
         f.write('}<br/>\n')
 
@@ -125,10 +127,12 @@ def write_bib(b):
         f.write('%s.' % b['apauthor'])
         f.write(' (%s).<br/> ' % (b['year']))
         f.write('%s.' % b['title'])
-        f.write(' <br/><i>%s</i>' % b['booktitle'])
+        f.write(' <br/>In <i>%s</i>' % b['booktitle'])
         if b['type'] == 'article':
             f.write(', %s(%s)' % (b['volume'], b['number']))
-        f.write(', %s' % b['pages'].replace('--', '-').replace(' ', ''))
+        f.write(', %s.' % b['pages'].replace('--', '-').replace(' ', ''))
+        if b['doi']:
+            f.write('<br/> DOI:%s' % b['doi'])
 
 
 def write_data_to_markdown(file_name):
@@ -146,7 +150,7 @@ def write_data_to_markdown(file_name):
                   '<p class="booktitle">%s</p>' \
                   '<p class="keywords">%s</p><br/><br/>' \
                   '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s%s | ' \
-                  'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
+                  'Cite: <a href="%s" class="bibtex">[BibTeX]</a> <a href="%s" class="bibtex">[APA]</a></div>' \
                   '</p></div>'
     LINE_UNPUBLISHED = '<div class="3u 12u$(medium)"><span class="image fit">' \
                        '<img src="teaser/%s" class="pub-pic" alt="%s" /></span></div>' \
@@ -155,7 +159,7 @@ def write_data_to_markdown(file_name):
                        '<p class="booktitle">%s</p>' \
                        '<p class="keywords">%s</p><br/><br/>' \
                        '<div class="downloads">Download: [pdf] %s%s%s | ' \
-                       'Cite: <a href="%s" class="bibtex">[APA]</a> <a href="%s" class="bibtex">[BibTeX]</a></div>' \
+                       'Cite: <a href="%s" class="bibtex">[BibTeX]</a> <a href="%s" class="bibtex">[APA]</a></div>' \
                        '</p></div>'
 
     CATEGORY = '### %s\n'
@@ -223,7 +227,7 @@ def write_data_to_markdown(file_name):
                 m['code'] = ' <a href="%s" target="blank">[code]</a>' % m['code'] if m['code'] else ''
                 m['slides'] = ' <a href="%s" target="blank">[slides]</a>' % m['slides'] if m['slides'] else ''
                 if 'web' in m and m['web']:
-                    m['web'] = ' <a href="%s" target="blank">[web]</a>' % m['web']
+                    m['web'] = ' <a href="%s" target="blank">[website]</a>' % m['web']
                 else:
                     m['web'] = ''
                 if 'data' in m and m['data']:
