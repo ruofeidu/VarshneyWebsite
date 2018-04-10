@@ -290,12 +290,12 @@ def write_data_to_markdown(file_name):
                             f.write(LINE_PAPERS % (
                                 m['url'], m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
                                 m['keywords'],
-                                m['url'], m['doi'], m['video'], m['code'], m['slides'], m['web'], m['data'], m['apa'],
-                                m['bib']))
+                                m['url'], m['doi'], m['video'], m['code'], m['slides'], m['web'], m['data'],
+                                m['bib'], m['apa']))
                         else:
                             f.write(LINE_UNPUBLISHED % (
                                 m['image'], m['title'], m['title'], m['author'], m['booktitle'],
-                                m['keywords'], m['video'], m['code'], m['slides'], m['apa'], m['bib']))
+                                m['keywords'], m['video'], m['code'], m['slides'], m['bib'], m['apa']))
                         f.write(ROW_END)
                         count += 1
 
