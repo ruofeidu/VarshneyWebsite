@@ -149,7 +149,7 @@ def write_data_to_markdown(file_name):
                   '<p class="authors">%s</p>' \
                   '<p class="booktitle">%s</p>' \
                   '<p class="keywords">%s</p><br/><br/>' \
-                  '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s %s%s%s%s%s | ' \
+                  '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s%s %s%s%s%s%s | ' \
                   'Cite: <a href="%s" class="bibtex">[BibTeX]</a> <a href="%s" class="bibtex">[APA]</a></div>' \
                   '</p></div>'
     LINE_UNPUBLISHED = '<div class="3u 12u$(medium)"><span class="image fit">' \
@@ -279,6 +279,11 @@ def write_data_to_markdown(file_name):
                     m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
                     if 'news' in m:
                         m['booktitle'] += ' <a href="%s"><span class="news">News</span></a>' % m['news']
+                if 'low' in m and m['low']:
+                    m['low'] = ' <a href="papers/%s" target="blank">[lowres]</a>' % m['low']
+                else:
+                    m['low'] = ''
+
 
             for y in sorted(years, reverse=True):
                 # f.write(YEAR % y)
@@ -290,7 +295,7 @@ def write_data_to_markdown(file_name):
                             f.write(LINE_PAPERS % (
                                 m['url'], m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
                                 m['keywords'],
-                                m['url'], m['doi'], m['video'], m['code'], m['slides'], m['web'], m['data'],
+                                m['url'], m['doi'], m['low'], m['video'], m['code'], m['slides'], m['web'], m['data'],
                                 m['bib'], m['apa']))
                         else:
                             f.write(LINE_UNPUBLISHED % (
