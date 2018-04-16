@@ -219,10 +219,10 @@ def write_data_to_markdown(file_name):
                 m['bib'] = 'bib/' + bib + '.bib'
                 m['apa'] = 'bib/' + bib + '.apa'
                 if not m['video']:
-                    if m['youtube']:
-                        m['video'] = m['youtube']
-                    else:
+                    if m['vimeo']:
                         m['video'] = m['vimeo']
+                    else:
+                        m['video'] = m['youtube']
                 m['video'] = ' <a href="%s" target="blank">[video]</a>' % m['video'] if m['video'] else ''
                 m['code'] = ' <a href="%s" target="blank">[code]</a>' % m['code'] if m['code'] else ''
                 m['slides'] = ' <a href="%s" target="blank">[slides]</a>' % m['slides'] if m['slides'] else ''
