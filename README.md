@@ -102,3 +102,7 @@ git push
     "categories": ""
 }
 ```
+
+## Authors
+Main author: Ruofei Du
+Contributors: Xiaoxu Meng and Shuo Li
