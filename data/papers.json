@@ -76,7 +76,7 @@
         "youtube": "https://www.youtube.com/watch?v=VOpC-xEaB-Q&feature=youtu.be",
         "vimeo": "https://vimeo.com/264994635?activityReferer=1",
         "code": "",
-        "slides": "",
+        "slides": "https://obj.umiacs.umd.edu/aug_slides/Kernel_Foveated_Rendering_I3D_05152018.pptx",
         "talk": "",
         "award": "",
         "abstract": "Foveated rendering coupled with eye-tracking has the potential to dramatically accelerate interactive 3D graphics with minimal loss of perceptual detail. In this paper, we parameterize foveated rendering by embedding polynomial kernel functions in the classic log-polar mapping. Our GPU-driven technique uses closed-form, parameterized foveation that mimics the distribution of photoreceptors in the human retina. We present a simple two-pass kernel foveated rendering (KFR) pipeline that maps well onto modern GPUs. In the first pass, we compute the kernel log-polar transformation and render to a reduced-resolution buffer. In the second pass, we carry out the inverse-log-polar transformation with anti-aliasing to map the reduced-resolution rendering to the full-resolution screen. We have carried out pilot and formal user studies to empirically identify the KFR parameters. We observe a 2.8X-3.2X speedup in rendering on 4K UHD (2160p) displays with minimal perceptual loss of detail. The relevance of eye-tracking-guided kernel foveated rendering can only increase as the anticipated rise of display resolution makes it ever more difficult to resolve the mutually conflicting goals of interactive rendering and perceptual realism.",
