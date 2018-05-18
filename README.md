@@ -2,13 +2,20 @@
 * Written in Python + Markdown + HTML
 * Deployed site is located at http://www.cs.umd.edu/~varshney
 
-## Short Edit
-* Just clone the repo, make tiny edits, and run:
+## Minor Revision
+* First, if you do not have access to this repo, email ruofei@umiacs
+* Next, clone the repo to local diretory
+```bash
+git clone git@github.com:AugmentariumLab/VarshneyWebsite.git
+```
+* Make minor revision in data/students.json or data/papers.json, 
+* You may want to put new teaser images and paper preprints under teaser/ and papers/
+* After you make all the changes, run:
 ```bash
 python build.py
 ```
-to rebuild all html files
-* Commit and push
+to rebuild all the html files.
+* Finally, commit the changes and push
 ```bash
 git add -A
 git commit -m "documentation of your modification"
@@ -16,14 +23,14 @@ git push
 ```
 * DONE!
 
-## Long Edit
+## Major revision
 * First, clone this repo, and create your own branch of this:
 ```bash
 git clone git@github.com:AugmentariumLab/VarshneyWebsite.git
 git branch feature-your-branch-name
+git checkout feature-your-branch-name
 ```
-* Then edit data/students.json and data/papers.json
-* You may want to put new teaser images and paper preprints under teaser/ and papers/
+* Make major revision in Python scripts
 * (optional) Run:
 ```bash
 python build.py
@@ -34,7 +41,7 @@ git add -A
 git commit -m "documentation of your modification"
 git push
 ```
-* Send a pull request to the main branch
+* Send a pull request to the main branch and notify any one in the admin group
 * DONE!
 
 ## Students
@@ -102,3 +109,7 @@ git push
     "categories": ""
 }
 ```
+
+## Authors
+* Main author: Ruofei Du
+* Contributors: Xiaoxu Meng and Shuo Li

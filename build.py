@@ -5,7 +5,10 @@ from xml.etree import ElementTree as ET
 from scripts.types import *
 import re, json
 import markdown
+import time
 
+
+build_time = time.time()
 re_markdown = re.compile("<!--\s*include\s*:\s*data\/(.+)\.txt\s*?-->")
 re_html = re.compile("<!--\s*include\s*:\s*(.+)\.html\s*?-->")
 
@@ -121,7 +124,6 @@ def write_bib(b):
         f.write('}<br/>\n')
 
     filename = 'bib/' + b['bib'] + '.apa'
-    print(filename)
 
     with open(filename, 'w') as f:
         f.write('%s.' % b['apauthor'])
@@ -134,6 +136,11 @@ def write_bib(b):
         if b['doi']:
             f.write('<br/> DOI:%s' % b['doi'])
 
+    filename = 'bib/' + b['bib'] + '.abstract'
+    if b['abstract']:
+        with open(filename, 'w') as f:
+            f.write('%s' % b['abstract'])
+    print(filename)
 
 def write_data_to_markdown(file_name):
     LINE_MEDIA = '* *%s*, **[%s](%s)**, %s%s %s, %s.\n'
@@ -149,7 +156,8 @@ def write_data_to_markdown(file_name):
                   '<p class="authors">%s</p>' \
                   '<p class="booktitle">%s</p>' \
                   '<p class="keywords">%s</p><br/><br/>' \
-                  '<div class="downloads">Download: <a href="%s" target="_blank">[pdf]</a>%s%s %s%s%s%s%s | ' \
+                  '<div class="downloads">Paper: <a href="%s" target="_blank">[pdf]</a>%s%s '\
+                  '%s%s%s%s%s%s%s%s | ' \
                   'Cite: <a href="%s" class="bibtex">[BibTeX]</a> <a href="%s" class="bibtex">[APA]</a></div>' \
                   '</p></div>'
     LINE_UNPUBLISHED = '<div class="3u 12u$(medium)"><span class="image fit">' \
@@ -158,7 +166,7 @@ def write_data_to_markdown(file_name):
                        '<p class="authors">%s</p>' \
                        '<p class="booktitle">%s</p>' \
                        '<p class="keywords">%s</p><br/><br/>' \
-                       '<div class="downloads">Download: [pdf] %s%s%s | ' \
+                       '<div class="downloads">Paper: [pdf] %s%s%s | ' \
                        'Cite: <a href="%s" class="bibtex">[BibTeX]</a> <a href="%s" class="bibtex">[APA]</a></div>' \
                        '</p></div>'
 
@@ -201,6 +209,7 @@ def write_data_to_markdown(file_name):
         elif file_name == 'papers':
             years = []
             for m in data['papers']:
+                # Sorted by year
                 if m['year'] not in years:
                     years.append(m['year'])
                 if not m['bib']:
@@ -213,17 +222,32 @@ def write_data_to_markdown(file_name):
                         if i == len(authors) - 1:
                             m['apauthor'] += 'and '
                     m['apauthor'] += author.strip()
+
+                # paper PDF, URL, and LoRes, and citations
                 write_bib(m)
                 m['url'] = 'papers/' + m['url'] if not 'http' in m['url'] else m['url']
+                if 'low' in m and m['low']:
+                    m['low'] = ' <a href="papers/%s" target="blank">[lores]</a>' % m['low']
+                else:
+                    m['low'] = ''
+                if m['doi']:
+                    m['doi'] = ' <a href="https://doi.org/%s" target="_blank">[doi]</a>' % m['doi']
                 bib = m['bib']
                 m['bib'] = 'bib/' + bib + '.bib'
                 m['apa'] = 'bib/' + bib + '.apa'
+
+                # More information
+                if m['abstract']:
+                    m['abstract'] = ' <a href="%s" class="bibtex">[abstract]</a> ' % ('bib/' + bib + '.abstract')
+                # vimeo > youtube > video
                 if not m['video']:
                     if m['vimeo']:
                         m['video'] = m['vimeo']
                     else:
                         m['video'] = m['youtube']
+                        m['youtube'] = None
                 m['video'] = ' <a href="%s" target="blank">[video]</a>' % m['video'] if m['video'] else ''
+                m['youtube'] = ' <a href="%s" target="blank">[youtube]</a>' % m['youtube'] if m['youtube'] else ''
                 m['code'] = ' <a href="%s" target="blank">[code]</a>' % m['code'] if m['code'] else ''
                 m['slides'] = ' <a href="%s" target="blank">[slides]</a>' % m['slides'] if m['slides'] else ''
                 if 'web' in m and m['web']:
@@ -237,8 +261,6 @@ def write_data_to_markdown(file_name):
                 if not m['published']:
                     m['booktitle'] = 'To Appear In ' + m['booktitle']
                     m['url'] = ''
-                if m['doi']:
-                    m['doi'] = ' <a href="https://doi.org/%s" target="_blank">[doi]</a>' % m['doi']
                 m['author'] = ''
                 for i, author in enumerate(authors):
                     if i > 0:
@@ -279,11 +301,10 @@ def write_data_to_markdown(file_name):
                     m['booktitle'] += '<br/><span class="award">%s</span>' % m['award']
                     if 'news' in m:
                         m['booktitle'] += ' <a href="%s"><span class="news">News</span></a>' % m['news']
-                if 'low' in m and m['low']:
-                    m['low'] = ' <a href="papers/%s" target="blank">[lowres]</a>' % m['low']
+                if m['web'] or m['video'] or m['youtube'] or m['abstract'] or m['code'] or m['slides'] or m['data']:
+                    m['more'] = '| '
                 else:
-                    m['low'] = ''
-
+                    m['more'] = ''
 
             for y in sorted(years, reverse=True):
                 # f.write(YEAR % y)
@@ -295,7 +316,8 @@ def write_data_to_markdown(file_name):
                             f.write(LINE_PAPERS % (
                                 m['url'], m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
                                 m['keywords'],
-                                m['url'], m['doi'], m['low'], m['video'], m['code'], m['slides'], m['web'], m['data'],
+                                m['url'], m['doi'], m['low'],
+                                m['more'], m['web'], m['video'], m['youtube'], m['abstract'], m['code'], m['slides'],m['data'],
                                 m['bib'], m['apa']))
                         else:
                             f.write(LINE_UNPUBLISHED % (
@@ -327,3 +349,5 @@ for f in html_files:
 # Finally, generate combined files
 for f in build_files:
     build(f)
+
+print("Done! Time used %.2fs" % (time.time() - build_time))
