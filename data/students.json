@@ -558,6 +558,21 @@
         "current": "University of Maryland",
         "year": 2013
     },
+
+    {
+      "url": "https://www.linkedin.com/in/alexander-rowden-60262bb1",
+      "photo": "AlexRowden.jpg",
+      "name": "Alex Rowden",
+      "title": "Ph.D. Student",
+      "category": "Graduate Students",
+      "time": "",
+      "visible": true,
+      "tags": "GVIL,Augmentarium",
+      "department": "Computer Science",
+      "current": "University of Maryland",
+      "year": 2013
+    },
+
     {
         "url": "https://www.linkedin.com/in/thomasbaby",
         "photo": "ThomasBaby.jpg",
@@ -779,4 +794,5 @@
         "current": "National Cancer Institute",
         "year": 2013
     }
+
 ]
