@@ -533,19 +533,6 @@
         "year": 2013
     },
     {
-        "url": "http://taralarrue.com/",
-        "photo": "TaraLarrue.jpg",
-        "name": "Tara Larrue",
-        "title": "Ph.D. Student",
-        "category": "Alumni",
-        "time": "",
-        "visible": true,
-        "tags": "GVIL,Augmentarium",
-        "department": "Computer Science",
-        "current": "University of Maryland",
-        "year": 2013
-    },
-    {
         "url": "https://www.cs.umd.edu/people/lishuo15",
         "photo": "ShuoLi.jpg",
         "name": "Shuo Li",
@@ -584,7 +571,20 @@
         "tags": "GVIL,Augmentarium",
         "department": "Computer Science",
         "current": "University of Maryland",
-        "year": 2013
+        "year": 2003
+    },
+    {
+        "url": "http://www.linkedin.com/in/aravindkalaiah",
+        "photo": "AravindKalaiah.jpg",
+        "name": "Aravind Kalaiah",
+        "title": "Ph.D.",
+        "category": "Alumni",
+        "time": "",
+        "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2005
     },
     {
         "url": "http://www.columbia.edu/~xh2108/",
@@ -597,7 +597,7 @@
         "tags": "GVIL,Augmentarium",
         "department": "Department of Psychiatry",
         "current": "Columbia University & New York State Psychiatric Institute",
-        "year": 2013
+        "year": 2005
     },
     {
         "url": "http://cau.ac.kr/~chlee/",
@@ -610,7 +610,59 @@
         "tags": "GVIL,Augmentarium",
         "department": "Computer Science",
         "current": "University of Maryland",
-        "year": 2013
+        "year": 2005
+    },
+    {
+        "url": "http://www.linkedin.com/in/zhiyun",
+        "photo": "ZhiyunLi.jpg",
+        "name": "Zhiyun Li",
+        "title": "Ph.D.",
+        "category": "Alumni",
+        "time": "",
+        "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2005
+    },
+    {
+        "url": "http://w3.impa.br/~andmax/",
+        "photo": "AndreMaximo.jpg",
+        "name": "Andre Maximo",
+        "title": "Ph.D.",
+        "category": "Alumni",
+        "time": "",
+        "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2009
+    },
+    {
+        "url": "http://www.cs.umd.edu/~ymkim",
+        "photo": "YoungminKim.gif",
+        "name": "Youngmin Kim",
+        "title": "Ph.D.",
+        "category": "Alumni",
+        "time": "",
+        "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2010
+    },
+    {
+        "url": "http://www.robpatro.com",
+        "photo": "RobPatro.jpg",
+        "name": "Rob Patro",
+        "title": "Ph.D.",
+        "category": "Alumni",
+        "time": "",
+        "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2012
     },
     {
         "url": "http://www.cs.umd.edu/~ipcy",
@@ -629,71 +681,6 @@
         "url": "http://www.derek.juba.name/",
         "photo": "DerekJuba.jpg",
         "name": "Derek Juba",
-        "title": "Ph.D.",
-        "category": "Alumni",
-        "time": "",
-        "visible": true,
-        "tags": "GVIL,Augmentarium",
-        "department": "Computer Science",
-        "current": "University of Maryland",
-        "year": 2013
-    },
-    {
-        "url": "http://www.linkedin.com/in/aravindkalaiah",
-        "photo": "AravindKalaiah.jpg",
-        "name": "Aravind Kalaiah",
-        "title": "Ph.D.",
-        "category": "Alumni",
-        "time": "",
-        "visible": true,
-        "tags": "GVIL,Augmentarium",
-        "department": "Computer Science",
-        "current": "University of Maryland",
-        "year": 2013
-    },
-    {
-        "url": "http://www.cs.umd.edu/~ymkim",
-        "photo": "YoungminKim.gif",
-        "name": "Youngmin Kim",
-        "title": "Ph.D.",
-        "category": "Alumni",
-        "time": "",
-        "visible": true,
-        "tags": "GVIL,Augmentarium",
-        "department": "Computer Science",
-        "current": "University of Maryland",
-        "year": 2013
-    },
-    {
-        "url": "http://www.linkedin.com/in/zhiyun",
-        "photo": "ZhiyunLi.jpg",
-        "name": "Zhiyun Li",
-        "title": "Ph.D.",
-        "category": "Alumni",
-        "time": "",
-        "visible": true,
-        "tags": "GVIL,Augmentarium",
-        "department": "Computer Science",
-        "current": "University of Maryland",
-        "year": 2013
-    },
-    {
-        "url": "http://w3.impa.br/~andmax/",
-        "photo": "AndreMaximo.jpg",
-        "name": "Andre Maximo",
-        "title": "Ph.D.",
-        "category": "Alumni",
-        "time": "",
-        "visible": true,
-        "tags": "GVIL,Augmentarium",
-        "department": "Computer Science",
-        "current": "University of Maryland",
-        "year": 2013
-    },
-    {
-        "url": "http://www.robpatro.com",
-        "photo": "RobPatro.jpg",
-        "name": "Rob Patro",
         "title": "Ph.D.",
         "category": "Alumni",
         "time": "",
@@ -727,7 +714,7 @@
         "tags": "GVIL,Augmentarium",
         "department": "Computer Science",
         "current": "University of Maryland",
-        "year": 2013
+        "year": 2014
     },
     {
         "url": "http://www.linkedin.com/in/patricia-sazama-44938271",
@@ -740,7 +727,20 @@
         "tags": "GVIL,Augmentarium",
         "department": "Computer Science",
         "current": "University of Maryland",
-        "year": 2013
+        "year": 2015
+    },
+    {
+        "url": "http://www.umiacs.umd.edu/~sujal",
+        "photo": "SujalBista.jpg",
+        "name": "Sujal Bista",
+        "title": "Ph.D.",
+        "category": "Alumni",
+        "time": "",
+        "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2015
     },
     {
         "url": "http://cs.umd.edu/~somay/",
@@ -753,7 +753,7 @@
         "tags": "GVIL,Augmentarium",
         "department": "Computer Science",
         "current": "University of Maryland",
-        "year": 2013
+        "year": 2016
     },
     {
         "url": "http://mukulagarwal.com/",
@@ -766,7 +766,7 @@
         "tags": "GVIL,Augmentarium",
         "department": "Virtual Reality User Experience Designer",
         "current": "High Fidelity",
-        "year": 2013
+        "year": 2017
     },
     {
         "url": "https://www.cs.umd.edu/people/gkramida",
@@ -779,7 +779,7 @@
         "tags": "GVIL,Augmentarium",
         "department": "Postgraduate Student",
         "current": "National Cancer Institute",
-        "year": 2013
+        "year": 2017
     },
     {
         "url": "http://www.cs.umd.edu/~cheng",
@@ -792,7 +792,19 @@
         "tags": "GVIL,Augmentarium",
         "department": "Postgraduate Student",
         "current": "National Cancer Institute",
-        "year": 2013
+        "year": 2018
+    },
+    {
+        "url": "http://taralarrue.com/",
+        "photo": "TaraLarrue.jpg",
+        "name": "Tara Larrue",
+        "title": "Ph.D. Student",
+        "category": "Alumni",
+        "time": "",
+        "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2018
     }
-
 ]
