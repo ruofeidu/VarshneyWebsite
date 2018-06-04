@@ -545,6 +545,20 @@
         "current": "University of Maryland",
         "year": 2013
     },
+    
+    {
+      "url": "http://www.prism.gatech.edu/~dmondal6/",
+      "photo": "DibyenduMondal.jpg",
+      "name": "Dibyendu Mondal",
+      "title": "Visting Masters Student",
+      "category": "Graduate Students",
+      "time": "",
+      "visible": true,
+      "tags": "MBRC",
+      "department": "Computer Science",
+      "current": "Georgia Tech",
+      "year": 2018
+    },
 
     {
       "url": "https://www.linkedin.com/in/alexander-rowden-60262bb1",
