@@ -1,8 +1,8 @@
 [
         {
         "bibname": "Krokos2018Memory",
-        "url": "https://link.springer.com/article/10.1007/s10055-018-0346-3",
-        "title": "Virtual memory palaces: immersion aids recall",
+        "url": "https://obj.umiacs.umd.edu/virtual_reality_study/10.1007-s10055-018-0346-3.pdf",
+        "title": "Virtual Memory Palaces: Immersion Aids Recall",
         "bib": "",
         "author": "Eric Krokos and Catherine Plaisant and Amitabh Varshney",
         "type": "article",
@@ -30,7 +30,7 @@
         "visible": true,
         "poseter": "",
         "video": "",
-        "web": "https://obj.umiacs.umd.edu/virtual_reality_study/10.1007-s10055-018-0346-3.pdf",
+        "web": "",
         "youtube": "",
         "vimeo": "",
         "code": "",
