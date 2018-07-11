@@ -24,6 +24,7 @@
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="https://www.cs.umd.edu/people/lishuo15" target="_blank"><img src="photos/ShuoLi.jpg" alt="Shuo Li's photo" class="face"/></a></span><h4 class="center"><a href="https://www.cs.umd.edu/people/lishuo15" target="_blank" class="name">Shuo Li</a></h4></div>
 </div>
 <div class="row">
+<div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.prism.gatech.edu/~dmondal6/" target="_blank"><img src="photos/DibyenduMondal.jpg" alt="Dibyendu Mondal's photo" class="face"/></a></span><h4 class="center"><a href="http://www.prism.gatech.edu/~dmondal6/" target="_blank" class="name">Dibyendu Mondal</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="https://www.linkedin.com/in/alexander-rowden-60262bb1" target="_blank"><img src="photos/AlexRowden.jpg" alt="Alex Rowden's photo" class="face"/></a></span><h4 class="center"><a href="https://www.linkedin.com/in/alexander-rowden-60262bb1" target="_blank" class="name">Alex Rowden</a></h4></div>
 </div>
 ### Alumni
@@ -45,7 +46,7 @@
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.umiacs.umd.edu/~yalcin" target="_blank"><img src="photos/AdilYalcin.jpg" alt="M. Adil Yalcin's photo" class="face"/></a></span><h4 class="center"><a href="http://www.umiacs.umd.edu/~yalcin" target="_blank" class="name">M. Adil Yalcin</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.linkedin.com/in/patricia-sazama-44938271" target="_blank"><img src="photos/PatriciaSazama.jpg" alt="Patricia Sazama's photo" class="face"/></a></span><h4 class="center"><a href="http://www.linkedin.com/in/patricia-sazama-44938271" target="_blank" class="name">Patricia Sazama</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://www.umiacs.umd.edu/~sujal" target="_blank"><img src="photos/SujalBista.jpg" alt="Sujal Bista's photo" class="face"/></a></span><h4 class="center"><a href="http://www.umiacs.umd.edu/~sujal" target="_blank" class="name">Sujal Bista</a></h4></div>
-<div class="2u 12u$(medium) center"><span class="image fit"><a href="http://cs.umd.edu/~somay/" target="_blank"><img src="photos/SomayJain.jpg" alt="Somay Jain's photo" class="face"/></a></span><h4 class="center"><a href="http://cs.umd.edu/~somay/" target="_blank" class="name">Somay Jain</a></h4></div>
+<div class="2u 12u$(medium) center"><span class="image fit"><a href="https://www.linkedin.com/in/somayjain" target="_blank"><img src="photos/SomayJain.jpg" alt="Somay Jain's photo" class="face"/></a></span><h4 class="center"><a href="https://www.linkedin.com/in/somayjain" target="_blank" class="name">Somay Jain</a></h4></div>
 <div class="2u 12u$(medium) center"><span class="image fit"><a href="http://mukulagarwal.com/" target="_blank"><img src="photos/MukulAgarwal.jpg" alt="Mukul Agarwal's photo" class="face"/></a></span><h4 class="center"><a href="http://mukulagarwal.com/" target="_blank" class="name">Mukul Agarwal</a></h4></div>
 </div>
 <div class="row">
