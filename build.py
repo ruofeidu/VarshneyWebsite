@@ -1,17 +1,16 @@
-# author: Ruofei Du
+# Author: Ruofei Du
 # This script builds the website by parsing the markdown text files and json files in data/
 # This script also includes common files such as header and footer, and embed them into the final HTML
-from xml.etree import ElementTree as ET
+# from xml.etree import ElementTree as ET
 from scripts.types import *
 import re, json
 import markdown
 import time
 
-
+NUM_PAPERS = 0
 build_time = time.time()
 re_markdown = re.compile("<!--\s*include\s*:\s*data\/(.+)\.txt\s*?-->")
 re_html = re.compile("<!--\s*include\s*:\s*(.+)\.html\s*?-->")
-
 html, md, data, people = {}, {}, {}, {}
 
 
@@ -90,7 +89,7 @@ def write_bib(b):
 
     with open(filename, 'w') as f:
         f.write('@%s{%s,<br/>\n' % (b['type'], b['bibname']))
-        f.write(TAB + 'title = "%s",<br/>\n' % b['title'])
+        f.write(TAB + 'title = {{%s}},<br/>\n' % b['title'])
         author_list = b['author']
         if 'authorb' in b:
             author_list = b['authorb']
@@ -142,7 +141,9 @@ def write_bib(b):
             f.write('%s' % b['abstract'])
     print(filename)
 
+
 def write_data_to_markdown(file_name):
+    global NUM_PAPERS
     LINE_MEDIA = '* *%s*, **[%s](%s)**, %s%s %s, %s.\n'
     LINE_STUDENTS = '<div class="2u 12u$(medium) center"><span class="image fit">' \
                     '<a href="%s" target="_blank"><img src="photos/%s" alt="%s" class="face"/></a></span>' \
@@ -156,7 +157,7 @@ def write_data_to_markdown(file_name):
                   '<p class="authors">%s</p>' \
                   '<p class="booktitle">%s</p>' \
                   '<p class="keywords">%s</p><br/><br/>' \
-                  '<div class="downloads">Paper: <a href="%s" target="_blank">[pdf]</a>%s%s '\
+                  '<div class="downloads">Paper: <a href="%s" target="_blank">[pdf]</a>%s%s ' \
                   '%s%s%s%s%s%s%s%s | ' \
                   'Cite: <a href="%s" class="bibtex">[BibTeX]</a> <a href="%s" class="bibtex">[APA]</a></div>' \
                   '</p></div>'
@@ -175,7 +176,6 @@ def write_data_to_markdown(file_name):
     NEW_ROW = '<div class="row">\n'
     NEW_PUB = '<div class="row pub">\n'
     ROW_END = '</div>\n'
-
     HIDDEN_CATEGORIES = ['Faculty', 'Affiliated Faculty', 'Collaborators']
 
     with open("data/%s.txt" % file_name, 'w') as f:
@@ -313,11 +313,13 @@ def write_data_to_markdown(file_name):
                     if m['year'] == y and m['visible']:
                         f.write(NEW_PUB)
                         if m['published']:
+                            NUM_PAPERS += 1
                             f.write(LINE_PAPERS % (
                                 m['url'], m['image'], m['title'], m['url'], m['title'], m['author'], m['booktitle'],
                                 m['keywords'],
                                 m['url'], m['doi'], m['low'],
-                                m['more'], m['web'], m['video'], m['youtube'], m['abstract'], m['code'], m['slides'],m['data'],
+                                m['more'], m['web'], m['video'], m['youtube'], m['abstract'], m['code'], m['slides'],
+                                m['data'],
                                 m['bib'], m['apa']))
                         else:
                             f.write(LINE_UNPUBLISHED % (
@@ -350,4 +352,4 @@ for f in html_files:
 for f in build_files:
     build(f)
 
-print("Done! Time used %.2fs" % (time.time() - build_time))
+print("Done! %d papers rendered. Time used %.2fs" % (NUM_PAPERS, time.time() - build_time))
