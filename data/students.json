@@ -364,19 +364,6 @@
         "year": 2013
     },
     {
-        "url": "https://www.linkedin.com/in/david-li-23b812149",
-        "photo": "gupta.png",
-        "name": "David Li",
-        "title": "",
-        "category": "Undergraduate Students",
-        "time": "",
-        "visible": false,
-        "tags": "GVIL,Augmentarium",
-        "department": "Computer Science",
-        "current": "University of Maryland",
-        "year": 2013
-    },
-    {
         "url": "http://www.umiacs.umd.edu/~joseph/",
         "photo": "JosephJaJa.jpg",
         "name": "Joseph JaJa",
@@ -558,20 +545,6 @@
         "current": "University of Maryland",
         "year": 2013
     },
-    
-    {
-      "url": "http://www.prism.gatech.edu/~dmondal6/",
-      "photo": "DibyenduMondal.jpg",
-      "name": "Dibyendu Mondal",
-      "title": "Visting Masters Student",
-      "category": "Graduate Students",
-      "time": "",
-      "visible": true,
-      "tags": "MBRC",
-      "department": "Computer Science",
-      "current": "Georgia Tech",
-      "year": 2018
-    },
 
     {
       "url": "https://www.linkedin.com/in/alexander-rowden-60262bb1",
@@ -584,9 +557,24 @@
       "tags": "GVIL,Augmentarium",
       "department": "Computer Science",
       "current": "University of Maryland",
-      "year": 2013
+      "year": 2018
     },
 
+
+    {
+      "url": "https://www.linkedin.com/in/susmija",
+      "photo": "SusmijaReddyJabbireddy.jpg",
+      "name": "Susmija Reddy Jabbireddy",
+      "title": "Ph.D. Student",
+      "category": "Graduate Students",
+      "time": "",
+      "visible": true,
+      "tags": "GVIL,Augmentarium",
+      "department": "Computer Science",
+      "current": "University of Maryland",
+      "year": 2018
+    },
+	
     {
         "url": "https://www.linkedin.com/in/thomasbaby",
         "photo": "ThomasBaby.jpg",
@@ -829,6 +817,34 @@
         "category": "Alumni",
         "time": "",
         "visible": true,
+        "tags": "GVIL,Augmentarium",
+        "department": "Computer Science",
+        "current": "University of Maryland",
+        "year": 2018
+    },
+	
+    {
+      "url": "http://www.prism.gatech.edu/~dmondal6/",
+      "photo": "DibyenduMondal.jpg",
+      "name": "Dibyendu Mondal",
+      "title": "Visting Masters Student",
+      "category": "Alumni",
+      "time": "",
+      "visible": true,
+      "tags": "MBRC",
+      "department": "Computer Science",
+      "current": "Georgia Tech",
+      "year": 2018
+    },
+	
+    {
+        "url": "https://www.linkedin.com/in/david-li-23b812149",
+        "photo": "DavidLi.jpg",
+        "name": "David Li",
+        "title": "",
+        "category": "Alumni",
+        "time": "",
+        "visible": false,
         "tags": "GVIL,Augmentarium",
         "department": "Computer Science",
         "current": "University of Maryland",
