@@ -11,6 +11,9 @@ images/
 _backup
 bib/
 papers/
+.DS_Store
+*.zip
+*.7z
 
 # C extensions
 *.so
