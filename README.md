@@ -1,54 +1,74 @@
-# Dr. Varshney Website
-* Written in Python + Markdown + HTML
-* Deployed site is located at http://www.cs.umd.edu/~varshney
+# Dr. Varshney's Website
+
+- Written in Python + Markdown + HTML.
+- Deployed site is located at <http://www.cs.umd.edu/~varshney>
 
 ## Minor Revision
-* First, if you do not have access to this repo, email ruofei@umiacs
-* Next, clone the repo to local diretory
+
+- First, if you do not have access to this repo, email ruofei@umiacs.
+- Next, clone the repo to a local directory.
+
 ```bash
 git clone git@github.com:AugmentariumLab/VarshneyWebsite.git
 ```
-* Make minor revision in data/students.json or data/papers.json, 
-* You may want to put new teaser images and paper preprints under teaser/ and papers/
-* After you make all the changes, run:
+
+- Make minor revision in data/students.json or data/papers.json,
+- You may want to put new teaser images and paper preprints under teaser/ and papers/
+- After you make all the changes, run:
+
 ```bash
 python build.py
 ```
+
 to rebuild all the html files.
-* Finally, commit the changes and push
+
+- Finally, commit the changes and push
+
 ```bash
 git add -A
 git commit -m "documentation of your modification"
 git push
 ```
-* DONE!
+
+- DONE!
 
 ## Major revision
-* First, clone this repo, and create your own branch of this:
-```bash
-git clone git@github.com:AugmentariumLab/VarshneyWebsite.git
-git branch feature-your-branch-name
-git checkout feature-your-branch-name
-```
-* Make major revision in Python scripts
-* (optional) Run:
-```bash
-python build.py
-```
-* Commit and push
-```bash
-git add -A
-git commit -m "documentation of your modification"
-git push
-```
-* Send a pull request to the main branch and notify any one in the admin group
-* DONE!
+
+- First, clone this repo, and create your own branch of this:
+
+  ```bash
+  git clone git@github.com:AugmentariumLab/VarshneyWebsite.git
+  git branch feature-your-branch-name
+  git checkout feature-your-branch-name
+  ```
+
+- Make major revision in Python scripts
+
+- (optional) Run:
+
+  ```bash
+  python build.py
+  ```
+
+- Commit and push
+
+  ```bash
+  git add -A
+  git commit -m "documentation of your modification"
+  git push
+  ```
+
+- Send a pull request to the main branch and notify the admin group.
+
+- DONE!
 
 ## Students
-* All students are structured as JSON objects now so it's easier to add new people or hide people
-* For example:
-```json
-{
+
+- All students are structured as JSON objects so that it is easier to add new people or hide people.
+- For example:
+
+  ```json
+  {
     "url": "http://www.duruofei.com",
     "photo": "RuofeiDu.jpg",
     "name": "Ruofei Du",
@@ -60,13 +80,15 @@ git push
     "department": "Computer Science",
     "current": "University of Maryland",
     "year": 2013
-}
-```
+  }
+  ```
 
 ## Publications
-* Every paper is structured as JSON objects now, so it's easier to generate BibTeX, change visualization, and add filters in the future:
-```json
-{
+
+- Every paper is structured as JSON objects now, so it's easier to generate BibTeX, change visualization, and add filters in the future:
+
+  ```json
+  {
     "bibname": "HsuehChien2018Winnow",
     "url": "https://dl.acm.org/citation.cfm?id=3107449",
     "title": "Winnow: Interactive Visualization of Temporal Changes in Multidimensional Clinical Data",
@@ -107,9 +129,10 @@ git push
     "image": "HsuehChien2018Winnow.png",
     "supple": "",
     "categories": ""
-}
-```
+  }
+  ```
 
 ## Authors
-* Main author: Ruofei Du
-* Contributors: Xiaoxu Meng and Shuo Li
+
+- Main author: Ruofei Du
+- Contributors: Xiaoxu Meng and Shuo Li
