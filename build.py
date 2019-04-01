@@ -180,7 +180,7 @@ def write_data_to_markdown(file_name):
                 '<p class="booktitle">%s</p>' \
                 '<p class="keywords">%s</p><br/><br/>' \
                 '<div class="downloads">Paper: <a href="%s" target="_blank">[pdf]</a>%s%s ' \
-                '%s%s%s%s%s%s%s%s | ' \
+                '%s%s%s%s%s%s%s%s%s | ' \
                 'Cite: <a href="%s" class="bibtex">[BibTeX]</a> <a href="%s" class="bibtex">[APA]</a></div>' \
                 '</p></div>'
   LINE_UNPUBLISHED = '<div class="3u 12u$(medium)"><span class="image fit">' \
@@ -253,7 +253,7 @@ def write_data_to_markdown(file_name):
         write_bib(m)
         m['url'] = 'papers/' + m['url'] if not 'http' in m['url'] else m['url']
         if 'low' in m and m['low']:
-          m['low'] = ' <a href="papers/%s" target="blank">[lores]</a>' % m['low']
+          m['low'] = ' <a href="papers/%s" target="_blank">[lores]</a>' % m['low']
         else:
           m['low'] = ''
         if m['doi']:
@@ -276,22 +276,27 @@ def write_data_to_markdown(file_name):
           else:
             m['video'] = m['youtube']
             m['youtube'] = None
-        m['video'] = ' <a href="%s" target="blank">[video]</a>' % m[
+        m['video'] = ' <a href="%s" target="_blank">[video]</a>' % m[
             'video'] if m['video'] else ''
-        m['youtube'] = ' <a href="%s" target="blank">[youtube]</a>' % m[
+        m['youtube'] = ' <a href="%s" target="_blank">[youtube]</a>' % m[
             'youtube'] if m['youtube'] else ''
-        m['code'] = ' <a href="%s" target="blank">[code]</a>' % m['code'] if m[
+        m['code'] = ' <a href="%s" target="_blank">[code]</a>' % m['code'] if m[
             'code'] else ''
-        m['slides'] = ' <a href="%s" target="blank">[slides]</a>' % m[
+        m['slides'] = ' <a href="%s" target="_blank">[slides]</a>' % m[
             'slides'] if m['slides'] else ''
         if 'web' in m and m['web']:
-          m['web'] = ' <a href="%s" target="blank">[website]</a>' % m['web']
+          m['web'] = ' <a href="%s" target="_blank">[website]</a>' % m['web']
         else:
           m['web'] = ''
         if 'data' in m and m['data']:
-          m['data'] = ' <a href="%s" target="blank">[data]</a>' % m['data']
+          m['data'] = ' <a href="%s" target="_blank">[data]</a>' % m['data']
         else:
           m['data'] = ''
+          
+        if 'poster' in m and m['poster']:
+          m['poster'] = ' <a href="%s" target="_blank">[poster]</a>' % m['poster']
+        else:
+          m['poster'] = ''
         if not m['published']:
           m['booktitle'] = 'To Appear In ' + m['booktitle']
           m['url'] = ''
@@ -356,7 +361,7 @@ def write_data_to_markdown(file_name):
                        m['author'], m['booktitle'], m['keywords'], m['url'],
                        m['doi'], m['low'], m['more'], m['web'], m['video'],
                        m['youtube'], m['abstract'], m['code'], m['slides'],
-                       m['data'], m['bib'], m['apa']))
+                       m['data'], m['poster'], m['bib'], m['apa']))
             else:
               f.write(LINE_UNPUBLISHED %
                       (m['image'], m['title'], m['title'], m['author'],
