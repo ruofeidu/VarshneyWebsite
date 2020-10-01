@@ -402,3 +402,4 @@ for f in build_files:
 
 print("Done! %d papers rendered. Time used %.2fs" %
       (NUM_PAPERS, time.time() - build_time))
+print("Thanks For Using")
